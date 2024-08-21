@@ -1,0 +1,2398 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+
+
+
+/*---RESET--*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+    color: rgb(74, 80, 63);
+}
+
+/*---HEADER---*/
+
+header {
+    position: sticky;
+    top: 0;
+}
+
+header nav {
+    font-family: "Mulish", sans-serif;
+    /*background-color: rgba(101, 109, 74, 0.677);*/
+    background-color: rgba(101, 109, 74, 0.677);
+    position: sticky;
+    top: 0px;
+    /*height: 90px;*/
+}
+
+.navbar div a {
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(237, 224, 212);
+}
+
+
+.navbar-brand {
+    padding: 20px;
+}
+
+.navbar div a:hover {
+    color: rgb(101, 109, 74);
+}
+
+.nav-item a {
+    font-weight: 100;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(237, 224, 212);
+}
+
+.navbar-collapse ul li a {
+    font-weight: 100;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(237, 224, 212);
+    /*margin: 20px;*/
+}
+
+.d-flex {
+    width: 40%;
+    background-color: rgba(101, 109, 74, 0);
+}
+
+header form .boton {
+    width: 10%;
+    border: 1px solid rgb(237, 224, 212);
+}
+
+header form .boton:hover {
+    background-color: rgba(101, 109, 74, 0.304);
+    border: 2px solid rgb(237, 224, 212);
+}
+
+.boton img {
+    width: 100%;
+    border-color: rgb(237, 224, 212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex input {
+    width: 80%;
+    resize: none;
+    background-color: rgba(101, 109, 74, 0);
+}
+
+/*header{
+    background-color: rgba(101, 109, 74, 0.677);
+    position: sticky;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(237, 224, 212);
+    padding: 20px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li a{
+    font-weight: 100;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(237, 224, 212);
+    margin: 20px; 
+}*/
+
+
+/*---MAIN---*/
+
+main {
+    align-items: center;
+    justify-content: center;
+}
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 90.4px);
+    background-image: url(../img/hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: rgb(237, 224, 212);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.hero img {
+    width: 20%;
+    background-color: rgb(101, 109, 74);
+    border-color: rgb(237, 224, 212);
+    border-radius: 0px 30px 0px 30px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding: 15px;
+    color: white;
+}
+
+.hero h2 {
+    font-size: 25px;
+    color: rgb(101, 109, 74);
+    margin-bottom: 40px;
+}
+
+.hero a {
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(101, 109, 74);
+    background-color: rgb(237, 224, 212);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 0px 15px 0px 15px;
+}
+
+.hero a:hover {
+    border: 1px solid rgba(101, 109, 74, 0);
+    box-shadow: 0px 0px 10px 0.5px;
+}
+
+.bienvenidos {
+    width: 90%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bienvenidos div {
+    width: 50%;
+    /*padding: 20px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*position: relative;*/
+    margin: 0px auto;
+}
+
+.bienvenidos div img {
+    width: 290px;
+    margin: 0px;
+}
+
+
+.bienvenidos-imagen2 {
+    position: relative;
+    bottom: 70px;
+    left: 150px;
+    z-index: -2;
+}
+
+.bienvenidos div h3 {
+    width: 100%;
+    font-family: "Mulish", sans-serif;
+    font-weight: 200;
+    font-size: 30px;
+    font-style: italic;
+    color: rgb(101, 109, 74);
+    /*margin-left: 50px;*/
+    padding: 0px 0px 20px 0px;
+    /*text-align: center;
+    margin: 20px 0px 20px 100px;*/
+}
+
+.bienvenidos div p {
+    width: 100%;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 5px;
+    text-align: left;
+}
+
+.elegirnos {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(213, 217, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.elegirnos div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.elegirnos div h3 {
+    width: 100%;
+    font-weight: 200;
+    font-size: 30px;
+    font-style: italic;
+    /*padding-top: 20px;*/
+    color: rgb(101, 109, 74);
+    margin: 20px 20px 20px 0px;
+}
+
+.elegirnos div p {
+    width: 100%;
+    font-weight: 300;
+    font-size: 15px;
+    margin: 5px 20px 5px 0;
+
+}
+
+.elegirnos img {
+    width: 30%;
+    margin: 10px;
+    /*margin-left:50px;*/
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.servicios {
+    width: 80%;
+    height: 500px;
+    margin: 30px 0px 0px 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 60px 125px 125px 120px;
+    gap: 30px;
+    grid-template-areas:
+        "img titulo"
+        "img arquitectura"
+        "img interiorismo"
+        "img asesoramiento";
+    margin: 50px auto;
+    margin-top: 60px;
+}
+
+/*.servicios div img{
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    padding: 10px;
+    /*margin: 10px;
+    margin-left:50px;
+}*/
+
+.servicios div h3 {
+    width: 100%;
+    font-weight: 200;
+    font-size: 30px;
+    font-style: italic;
+    /*margin: 0px 0px 20px 15px;*/
+    color: rgb(101, 109, 74);
+}
+
+.servicios div h4 {
+    width: 100%;
+    font-weight: 100;
+    font-size: 13px;
+    font-style: italic;
+    text-align: left;
+}
+
+.servicios div h5 {
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    /*margin: 15px;*/
+    /*padding: 5px;*/
+    color: rgb(101, 109, 74);
+    display: inline;
+}
+
+.servicios div p {
+    width: 100%;
+    font-weight: 100;
+    font-size: 15px;
+    margin: 5px 0px 10px 0px;
+    text-align: justify;
+}
+
+.servicios div a {
+    width: 100%;
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(101, 109, 74);
+    background-color: rgb(237, 224, 212);
+    padding: 5px 10px 5px 10px;
+    border-radius: 0px 15px 0px 15px;
+}
+
+.servicios div a:hover {
+    border: 1px solid rgba(101, 109, 74, 0);
+    box-shadow: 0px 0px 5px 0.5px;
+}
+
+.servicios-imagenes {
+    grid-area: img;
+    z-index: -1;
+}
+
+.servicios-titulo {
+    grid-area: titulo;
+}
+
+.servicios-arquitectura {
+    grid-area: arquitectura;
+}
+
+.servicios-asesoramiento {
+    grid-area: asesoramiento;
+}
+
+.whatsapp a img {
+    width: 3%;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+/*---FOOTER---*/
+
+footer {
+    width: 100%;
+    /*background-color: rgb(101, 109, 74);*/
+    background-color: rgba(101, 109, 74, 0.677);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 41px 100px 100px 40px;
+    grid-template-areas:
+        "logo logo logo logo"
+        " contacto oficina social backtotop"
+        " isotipo isotipo isotipo isotipo"
+        " derechos derechos derechos derechos";
+    row-gap: 5px;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 100%;
+    height: 42px;
+    font-weight: 100;
+    font-size: 40px;
+    background-color: white;
+    color: rgb(237, 224, 212);
+    padding-bottom: 0px;
+    padding-left: 10px;
+    grid-column: span 4;
+    display: block;
+    text-align: left;
+}
+
+.footer-contacto {
+    width: 100%;
+    grid-area: contacto;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.footer-contacto h3 {
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgb(237, 224, 212);
+}
+
+.footer-contacto a {
+    font-weight: 100;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(237, 224, 212);
+    padding-top: 10px;
+}
+
+.footer-oficina {
+    width: 100%;
+    grid-area: oficina;
+    padding-top: 10px;
+}
+
+.footer-oficina h3 {
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgb(237, 224, 212);
+}
+
+.footer-oficina div p {
+    height: 4px;
+    font-weight: 100;
+    font-size: 13px;
+    color: rgb(237, 224, 212);
+    padding-top: 10px;
+}
+
+.footer-social {
+    width: 100%;
+    grid-area: social;
+    padding-top: 10px;
+}
+
+.footer-social h3 {
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgb(237, 224, 212);
+    align-items: center;
+}
+
+.footer-social a {
+    height: 10px;
+    font-weight: 100;
+    font-size: 13px;
+    text-decoration: none;
+    /* text-align: left; */
+    color: rgb(237, 224, 212);
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.footer-social a img {
+    width: 8%;
+    background-color: rgb(237, 224, 212);
+    border-radius: 6px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    align-items: center;
+}
+
+.footer-backtotop {
+    width: 100%;
+    grid-area: backtotop;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.footer-backtotop a {
+    font-weight: 100;
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(237, 224, 212);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-backtotop a img {
+    width: 7%;
+    background-color: rgb(237, 224, 212);
+    border-radius: 6px;
+    margin-left: 5px;
+}
+
+/*.footer-backtotop{
+    width: 100%;
+    grid-area: backtotop;
+    align-items: stretch;
+    padding-right: 10px;  
+    text-align: center;  
+}
+
+.footer-backtotop a{
+    font-weight: 400;
+    font-size: 13px;
+    text-decoration: none;
+    color: rgb(237, 224, 212);
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.footer-backtotop a img{
+    width: 8%;
+    background-color: rgb(237, 224, 212);
+    border-radius: 6px;
+}*/
+
+.footer-isotipo {
+    width: 100%;
+    grid-area: isotipo;
+    grid-column: span 4;
+    text-align: center;
+    display: inline-block;
+    align-items: end;
+    margin-top: 5px;
+}
+
+.footer-isotipo img {
+    width: 5%;
+    margin-top: 30px;
+
+}
+
+.footer-derechos {
+    color: rgb(74, 80, 63);
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 5px;
+    grid-area: derechos;
+    grid-column: span 4;
+    align-items: end;
+    /*background-color: rgb(101, 109, 74);*/
+    margin-top: 20px;
+}
+
+/*footer div{
+    margin-left: 15px;
+}
+
+footer div h3{
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: rgb(237, 224, 212);
+    padding: 5px;
+}
+
+footer div p{
+    font-weight: 100;
+    font-size: 12px;
+    color: rgb(237, 224, 212);
+    /*margin: 5px 0px 15px 15px;
+}
+
+footer div a{
+    font-weight: 100;
+    font-size: 12px;
+    text-decoration: none;
+    color: rgb(237, 224, 212);
+    display: block;
+}
+
+footer div a img{
+    width: 3%;
+    background-color: rgb(237, 224, 212);
+    border-radius: 10px;
+    margin: 5px 15px 0px 15px;
+}
+.footer-contacto{
+    grid-area: contacto;
+    width: 100%;
+}
+
+.footer-oficina{
+    grid-area: oficina;
+    width: 100%;
+}
+
+.footer-social{
+    grid-area: social;
+    width: 100%;
+}
+
+.footer-backtotop a{
+    font-weight: 100;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: rgb(101, 109, 74);
+    display: inline-block;
+    padding: 15 0px 0px 15px;
+    color: rgb(237, 224, 212);
+    grid-area: backtotop;
+}
+
+
+.footer-backtotop a img{
+    width: 8%;
+    background-color: rgb(237, 224, 212);
+    border-radius: 10px;
+    margin-right: 8px;
+    margin-left: 15px;
+}
+
+.footer-isotipo{
+    grid-area: isotipo;
+    grid-column: span 4;
+    justify-self: center;
+}
+
+.footer-isotipo img{
+    width:5%;
+
+}
+
+.footer-derechos{
+    color: rgb(74, 80, 63);
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 5px;
+    grid-area: derechos;
+    grid-column: span 4;
+}
+
+
+
+/*---ARQUITECTURA---*/
+
+.hero-arquitectura {
+    width: 100%;
+    height: calc(100vh - 90.4px);
+    background-image: url(../img/hero-arquitectura.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: rgb(237, 224, 212);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.hero-arquitectura h2 {
+    font-weight: 200;
+    font-size: 40px;
+    color: rgb(101, 109, 74);
+    width: 20%;
+    background-color: rgb(101, 109, 74);
+    border-radius: 0px 30px 0px 30px;
+    margin-top: 60px;
+    padding: 30px 15px 30px 15px;
+    color: rgb(237, 224, 212);
+    text-align: center;
+}
+
+.hero-arquitectura p {
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(101, 109, 74);
+    margin: 30px 0px 40px 0px;
+}
+
+.info-arquitectura {
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info-arquitectura div {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-arquitectura div p {
+    width: 100%;
+    font-weight: 100;
+    font-size: 15px;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.info-arquitectura img {
+    width: 20%;
+    padding: 5px;
+}
+
+.info-arquitectura-imagen_2{
+    display: none;
+}
+
+.arquitectura-proyectos h2 {
+    font-family: "Mulish", sans-serif;
+    width: 80%;
+    font-weight: 200;
+    font-size: 30px;
+    font-style: italic;
+    /*padding-top: 20px;*/
+    color: rgb(101, 109, 74);
+    margin: 10px 0px 10px 120px;
+}
+
+.arquitectura-tarjetas {
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.arquitectura-tarjetas div {
+    width: 350px;
+    height: 380px;
+    text-align: center;
+    border: 0.5px solid rgb(74, 80, 63);
+    border-radius: 0px 30px 0px 30px;
+    margin: 10px;
+}
+
+.arquitectura-tarjetas div img {
+    width: 100%;
+    height: 204px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.arquitectura-tarjetas div h3 {
+    width: 100%;
+    font-weight: 200;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(101, 109, 74);
+}
+
+.arquitectura-tarjetas div p {
+    width: 100%;
+    font-weight: 100;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: rgb(101, 109, 74);
+}
+
+.arquitectura-tarjetas div a {
+    width: 100%;
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(101, 109, 74);
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(237, 224, 212);
+    padding: 5px 10px 5px 10px;
+    border-radius: 0px 15px 0px 15px;
+}
+
+.arquitectura-tarjetas div a:hover{
+    border: 1px solid rgba(101, 109, 74, 0);
+    box-shadow: 0px 0px 5px 0.5px;
+}
+
+/*---INTERIORISMO---*/
+
+.hero-interiorismo{
+    width: 100%;
+    height: calc(100vh - 90.4px);
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: rgb(237, 224, 212);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.hero-interiorismo h2{
+    font-weight: 200;
+    font-size: 40px;
+    color: rgb(101, 109, 74);
+    width: 20%;
+    background-color: rgb(101, 109, 74);
+    border-radius: 0px 30px 0px 30px;
+    margin-top: 60px;
+    padding: 30px 15px 30px 15px;
+    color: rgb(237, 224, 212);
+    text-align: center;
+}
+
+.hero-interiorismo p{
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(101, 109, 74);
+    margin: 30px 0px 40px 0px;
+}
+
+.info-interiorismo{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info-interiorismo img{
+    width: 25%;
+    padding: 5px;
+}
+
+.info-interiorismo div{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.info-interiorismo div p{
+    width: 100%;
+    font-weight: 100;
+    font-size: 15px;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+/*---ASESORAMIENTO---*/
+
+.hero-asesoramiento{
+    width: 100%;
+    height: calc(100vh - 90.4px);
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: rgb(237, 224, 212);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.hero-asesoramiento h2{
+    font-weight: 200;
+    font-size: 40px;
+    color: rgb(101, 109, 74);
+    width: 20%;
+    background-color: rgb(101, 109, 74);
+    border-radius: 0px 30px 0px 30px;
+    margin-top: 60px;
+    padding: 30px 15px 30px 15px;
+    color: rgb(237, 224, 212);
+    text-align: center;
+}
+
+.hero-asesoramiento p{
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(101, 109, 74);
+    margin: 30px 0px 40px 0px;
+}
+
+.info-asesoramiento{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.info-asesoramiento img{
+    width: 25%;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.info-asesoramiento div{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-asesoramiento div h3{
+    width: 100%;
+    font-weight: 200;
+    font-size: 30px;
+    font-style: italic;
+    /*padding-top: 20px;*/
+    color: rgb(101, 109, 74);
+    margin: 20px 20px 20px 0px;
+}
+
+.info-asesoramiento div p{
+    width: 100%;
+    font-weight: 300;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.areas-asesoramiento h3{
+    font-family: "Mulish", sans-serif;
+    width: 80%;
+    font-weight: 200;
+    font-size: 20px;
+    font-style: italic;
+    /*padding-top: 20px;*/
+    color: rgb(101, 109, 74);
+    margin: 30px 0px 10px 50px;
+}
+
+.asesoramiento-tarjetas{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.asesoramiento-tarjetas div{
+    width: 350px;
+
+    text-align: center;
+    /*border: 0.5px solid rgb(74, 80, 63);
+    border-radius: 0px 30px 0px 30px;*/
+    margin: 10px;
+}
+
+.asesoramiento-tarjetas div h4{
+    width: 100%;
+    font-weight: 200;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+    color: rgb(101, 109, 74);
+}
+
+.asesoramiento-tarjetas div p{
+    width: 100%;
+    font-weight: 100;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 10px;
+    color: rgb(101, 109, 74);
+}
+
+/*---ESTUDIO---*/
+
+.hero-estudio{
+    width: 100%;
+    height: calc(100vh - 90.4px);
+    background-image: url;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: rgb(237, 224, 212);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.hero-estudio img{
+    width: 20%;
+    background-color: rgb(101, 109, 74);
+    border-color: rgb(237, 224, 212);
+    border-radius: 0px 30px 0px 30px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    padding: 15px;
+    color: white;
+}
+
+.info-estudio{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.info-estudio img{
+    width: 25%;
+}
+
+.info-estudio div{
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-estudio div p{
+    width: 100%;
+    font-weight: 100;
+    font-size: 15px;
+    margin-left: 20px;
+    text-align: justify;
+}
+
+/*---CONTACTO---*/
+
+.hero-contacto{
+    width: 100%;
+    height: calc(100vh - 90.4px);
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: rgb(237, 224, 212);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.hero-contacto h2{
+    font-weight: 200;
+    font-size: 40px;
+    color: rgb(101, 109, 74);
+    width: 20%;
+    background-color: rgb(101, 109, 74);
+    border-radius: 0px 30px 0px 30px;
+    margin-top: 60px;
+    padding: 30px 15px 30px 15px;
+    color: rgb(237, 224, 212);
+    text-align: center;
+}
+
+.hero-contacto p{
+    font-weight: 600;
+    font-size: 25px;
+    color: rgb(101, 109, 74);
+    margin: 30px 0px 40px 0px;
+}
+
+.consultas-generales{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.consultas-generales img {
+    width: 30%;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+.consultas-generales div h2 {
+    font-weight: 200;
+    font-size: 30px;
+    font-style: italic;
+    margin: 15px;
+    color: rgb(101, 109, 74);
+}
+
+.consultas-generales div p {
+    font-weight: 100;
+    font-size: 15px;
+    margin: 20px 0px 40px 20px;
+    text-align: left;
+}
+
+.consultas-generales div a {
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(101, 109, 74);
+    background-color: rgb(237, 224, 212);
+    padding: 5px 10px 5px 10px;
+    margin: 20px;
+    border-radius: 0px 15px 0px 15px;
+}
+
+.consultas-generales div a:hover{
+    border: 1px solid rgba(101, 109, 74, 0);
+    box-shadow: 0px 0px 10px 0.5px;
+}
+
+.consultas-de-proyecto {
+    background-color: rgb(213, 217, 200);
+    font-family: "Mulish", sans-serif;
+}
+
+.consultas-de-proyecto h2 {
+    font-weight: 200;
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 30px;
+    padding: 70px 0px 20px 30px;
+    color: rgb(101, 109, 74);
+
+}
+
+.consultas-de-proyecto p {
+    font-weight: 100;
+    font-size: 15px;
+    width: 45%;
+    padding: 0px 0px 30px 30px;
+    text-align: left;
+    display: block;
+}
+
+.consultas-de-proyecto img {
+    width: 30%;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+.formulario-contacto {
+    width: 100%;
+    color: rgb(101, 109, 74);
+    margin: 0px auto;
+    align-items: center;
+}
+
+.formulario-contacto div{
+    margin: 0px auto;
+    width: 100%;
+}
+
+.formulario-contacto div label {
+    font-weight: 400;
+    font-size: 13px;
+    padding: 15px 15px 0px 15px;
+}
+
+.formulario-contacto div input {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    width: 40%;
+    margin: 0px 20px 20px 15px;
+    padding: 5px;
+    text-align: left;
+    display: block;
+}
+
+.formulario-contacto .servicio-a-consultar label {
+    display: block;
+}
+
+.formulario-contacto .servicio-a-consultar select {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    width: 40%;
+    margin: 0px 20px 20px 15px;
+    padding: 5px;
+    height: 30px;
+    resize: none;
+}
+
+.formulario-contacto .checkbox-ambientes label {
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    width: 40%;
+    margin: 10px 0px 0px 15px;
+    padding: 0px;
+    height: 30px;
+}
+
+.formulario-contacto .checkbox-ambientes input {
+    display: inline-block;
+    width: 2%;
+    margin: 0px 20px 0px 0px;
+    padding: 0px;
+    height: 20px;
+}
+
+.contanos-tu-proyecto label {
+    font-weight: 400;
+    font-size: 13px;
+    padding: 15px 15px 0px 15px;
+    display: inline-block;
+}
+
+.contanos-tu-proyecto textarea {
+    font-family: "Mulish", sans-serif;
+    ;
+    font-weight: 400;
+    font-size: 12px;
+    width: 40%;
+    margin: 0px 20px 20px 15px;
+    padding: 5px;
+    text-align: left;
+    display: block;
+    resize: none;
+}
+
+.honorarios {
+    color: rgb(101, 109, 74);
+
+}
+
+.honorarios label {
+    font-weight: 400;
+    font-size: 13px;
+    padding: 15px 15px 0px 15px;
+}
+
+.honorarios select {
+    font-family: "Mulish", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    width: 40%;
+    margin: 0px 20px 20px 15px;
+    padding: 5px;
+    height: 30px;
+    resize: none;
+    display: block;
+}
+
+.presupuesto {
+    color: rgb(101, 109, 74);
+}
+
+.presupuesto label {
+    font-weight: 400;
+    font-size: 13px;
+    padding: 15px 15px 0px 15px;
+}
+
+.presupuesto textarea {
+    font-family: "Mulish", sans-serif;
+    ;
+    font-weight: 400;
+    font-size: 12px;
+    width: 40%;
+    margin: 0px 20px 20px 15px;
+    padding: 5px;
+    text-align: left;
+    display: block;
+    resize: none;
+}
+
+.submit-contacto {
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    margin: 15px;
+    text-decoration: none;
+    color: rgb(101, 109, 74);
+    background-color: rgb(237, 224, 212);
+    border-radius: 0px 15px 0px 15px;
+    border: none;
+}
+
+.reset-contacto {
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    margin: 15px;
+    text-decoration: none;
+    color: rgb(101, 109, 74);
+    background-color: rgb(237, 224, 212);
+    border-radius: 0px 15px 0px 15px;
+    border: none;
+}
+
+
+
+/*!!!---MEDIA-QUERIES--!!!*/
+
+@media screen and (max-width: 1366px){
+
+    .hero{
+        height: 700px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: static;
+        top: 0px;
+    }
+
+    .bienvenidos{
+        justify-content: space-evenly;
+    }
+
+    .bienvenidos-imagen2{
+        left: 90px;
+    }
+
+    .bienvenidos div h3{
+        margin-left: 50px;
+    }
+
+    .bienvenidos div p{
+        margin-left: 50px;
+    }
+
+    /*---ARQUITECTURA---*/
+
+    .hero-arquitectura {
+        width: 100%;
+        height: 650px;
+        position: static;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    /*NAV-BAR*/
+    .boton {
+        width: 20%;
+    }
+
+    .boton img {
+        width: 10px;
+        margin: 0 auto;
+    }
+
+    /*INDEX*/
+
+    .hero{
+        height: 550px;
+    }
+
+    .bienvenidos {
+        width: 90%;
+        height: 500px;
+    }
+
+    .bienvenidos div img {
+        width: 50%;
+    }
+
+    .bienvenidos div h3 {
+        /*font-size: 25px;*/
+        text-align: left;
+        padding-left: 50px;
+    }
+
+    .bienvenidos div p {
+        padding-left: 40px;
+    }
+
+    .elegirnos {
+        height: 350px;
+    }
+
+    .servicios {
+        height: auto;
+        margin: 40px auto;
+        grid-template-columns: 1.5fr 2fr;
+        grid-template-rows: 40px 130px 130px 130px;
+    }
+
+    .servicios div a {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /*ARQUITECTURA*/
+
+    .hero-arquitectura{
+        height: 600px;
+    }
+
+    .hero-arquitectura h2 {
+        font-size: 35px;
+        padding: 20px 10px 20px 10px;
+    }
+    .info-arquitectura img {
+        width: 25%;
+    }
+    .arquitectura-proyectos h2{
+        margin: 10px 0px 10px 80px;
+    }
+    .arquitectura-tarjetas{
+        height: auto;
+    }
+    .arquitectura-tarjetas div{
+        margin-bottom: 20px;
+    }
+    .arquitectura-tarjetas div a{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    /*NAV-BAR*/
+    .navbar-toggler {
+        border-color: rgb(237, 224, 212) !important;
+    }
+
+    .navbar-toggler-icon {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(237, 224, 212);
+    }
+
+    .navbar-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .d-flex {
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /*INDEX*/
+
+    .bienvenidos div h3{
+        padding-left: 0px;
+    }
+
+    .bienvenidos div p{
+        padding-left: 0px;
+    }
+
+    .elegirnos {
+        height: 300px;
+    }
+
+    .servicios {
+        height: auto;
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 40px 140px 140px 140px;
+    }
+
+    .servicios div a {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+/*---ARQUITECTURA---*/
+    .hero-arquitectura{
+        height: 550px;
+    }
+
+@media screen and (max-width:969px) {
+
+    /*NAV-BAR*/
+    .navbar div a {
+        font-size: 20px;
+    }
+
+    .navbar-toggler {
+        margin-right: 10px;
+    }
+
+    /*INDEX*/
+    .hero {
+        width: 100%;
+        height: 400px;
+    }
+
+    .hero h2 {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+
+    .hero a {
+        font-size: 12px;
+        border-radius: 0px 12px 0px 12px;
+        padding: 8px;
+        margin: 8px;
+    }
+
+    .bienvenidos-imagen2 {
+        position: relative;
+        bottom: 50px;
+        left: 100px;
+    }
+
+    .bienvenidos div h3 {
+        font-size: 22px;
+        text-align: left;
+    }
+
+    .bienvenidos div p {
+        font-size: 14px;
+    }
+
+    .elegirnos div h3 {
+        font-size: 25px;
+    }
+
+    .elegirnos div p {
+        font-size: 14px;
+    }
+
+    .servicios {
+        grid-template-columns: 2.8fr 2fr;
+        grid-template-rows: 35px 180px 180px 170px;
+    }
+
+    .servicios div h3 {
+        font-size: 22px;
+    }
+
+    /*.servicios div h5{
+        font-size: 15px;
+    }*/
+    .servicios div p {
+        font-size: 14px;
+    }
+
+    /*ARQUITECTURA*/
+
+    .hero-arquitectura {
+        height: 400px;
+    }
+
+    .hero-arquitectura h2 {
+        font-size: 30px;
+        border-radius: 0px 25px 0px 25px;
+    }
+
+    .hero-arquitectura p {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+    .info-arquitectura{
+        height: 530px;
+    }
+    .info-arquitectura div p {
+        font-size: 14px;
+    }
+    .arquitectura-proyectos h2{
+        width: 90%;
+        font-size: 25px;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .arquitectura-tarjetas div{
+        height: 360px;
+    }    
+    .arquitectura-tarjetas div h3{
+        font-size: 22px;
+    }
+    .arquitectura-tarjetas div p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:830px) {
+
+    /*INDEX*/
+    .servicios {
+        grid-template-columns: 2fr 2.5fr;
+        grid-template-rows: 50px 170px 170px 150px;
+        gap: 15px;
+    }
+
+    .servicios-imagenes {
+        margin: 0px auto;
+    }
+
+    .servicios div h5 {
+        font-size: 15px;
+    }
+
+    /*FOOTER*/
+    footer {
+        grid-template-rows: 41px 100px 60px 35px;
+    }
+
+    .footer-contacto h3 {
+        font-size: 12px;
+    }
+
+    .footer-contacto a {
+        font-size: 10px;
+    }
+
+    .footer-oficina h3 {
+        font-size: 12px;
+    }
+
+    .footer-oficina div p {
+        font-size: 10px;
+    }
+
+    .footer-social h3 {
+        font-size: 12px;
+    }
+
+    .footer-social a {
+        font-size: 10px;
+    }
+
+    .footer-backtotop a {
+        font-size: 10px;
+    }
+
+    .footer-derechos {
+        font-size: 10px;
+    }
+
+    /*ARQUITECTURA*/
+    .hero-arquitectura h2 {
+        font-size: 25px;
+    }
+
+    .hero-arquitectura p {
+        margin-top: 10px;
+    }
+    .info-arquitectura{
+        height: 620px;
+    }
+}
+
+@media screen and (max-width:750px) {
+
+    /*NAV-BAR*/
+    .navbar div a {
+        font-size: 15px;
+    }
+
+    /*INDEX*/
+    .hero img {
+        border-radius: 0px 15px 0px 15px;
+    }
+
+    .hero h2 {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    .hero a {
+        font-size: 10px;
+        border-radius: 0px 10px 0px 10px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .bienvenidos {
+        height: 400px;
+    }
+
+    .bienvenidos div img{
+        width: 40%;
+    }
+
+    .bienvenidos-imagen2{
+        left: 70px;
+        bottom: 20px;
+    }
+
+    .bienvenidos div h3 {
+        font-size: 20px;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .bienvenidos div p {
+        font-size: 12px;
+        margin-left: 60px;
+    }
+
+    .elegirnos div h3 {
+        font-size: 20px;
+        margin: 10px 10px 10px 0px;
+    }
+
+    .elegirnos div p {
+        font-size: 12px;
+    }
+
+    .servicios {
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 100px 120px 100px;
+        gap: 15px;
+        grid-template-areas:
+            "titulo"
+            "arquitectura"
+            "interiorismo"
+            "asesoramiento";
+    }
+
+    .servicios-imagenes {
+        display: none;
+    }
+
+    .servicios div h4 {
+        font-size: 10px;
+    }
+
+    .servicios div h5 {
+        font-size: 15px;
+    }
+
+    .servicios div p {
+        font-size: 12px;
+    }
+
+    .servicios div a {
+        font-size: 10px;
+        border-radius: 0px 10px 0px 10px;
+        padding: 5px;
+    }
+
+    /*FOOTER*/
+    .footer-logo {
+        font-size: 30px;
+        height: 32px;
+    }
+
+    /*WHATSAPP*/
+    .whatsapp a img {
+        width: 3%;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    /*ARQUITECTURA*/
+
+    .hero-arquitectura {
+        height: 300px;
+    }
+
+    .hero-arquitectura h2 {
+        font-size: 20px;
+    }
+
+    .hero-arquitectura p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+    .info-arquitectura{
+        width: 90%;
+        height: 550px;
+        justify-content: center;
+        margin: 0px auto;
+    }
+    .info-arquitectura div p {
+        font-size: 12px;
+    }
+
+    .info-arquitectura img {
+        width: 35%;
+    }
+    .arquitectura-proyectos div h2{
+        font-size: 20px;
+        text-align: left;
+        margin-left: 0px;
+    }
+    .arquitectura-tarjetas div{
+        width: 320px;
+        height: 350px;
+    }
+    .arquitectura-tarjetas div h3{
+        font-size: 18px;
+    }
+    .arquitectura-tarjetas div p{
+        font-size: 12px;
+    }
+    .arquitectura-tarjetas div a{
+        font-size: 10px;
+    }
+    .arquitectura-tarjetas div a{
+        font-size: 8px;
+        border-radius: 0px 10px 0px 10px;
+    }
+    
+}
+
+@media screen and (max-width: 654px) {
+
+    /*INDEX*/
+    .hero {
+        height: 300px;
+    }
+
+    .hero img {
+        width: 17%;
+        padding: 10px;
+        border-radius: 0px 12px 0px 12px;
+        margin: 25px 0px 10px 0px;
+    }
+
+    .bienvenidos {
+        height: 350px;
+    }
+
+    .bienvenidos div h3 {
+        font-size: 15px;
+        text-align: left;
+        padding-left: 10px;
+    }
+
+    .bienvenidos div p {
+        font-size: 9px;
+    }
+
+    .elegirnos {
+        height: auto;
+    }
+
+    .elegirnos div h3 {
+        font-size: 15px;
+        margin: 10px 10px 10px 0px;
+    }
+
+    .elegirnos div p {
+        font-size: 9px;
+    }
+
+    .servicios div h3 {
+        font-size: 15px;
+    }
+
+    .servicios div h4 {
+        font-size: 9px;
+    }
+
+    .servicios div h5 {
+        font-size: 12px;
+    }
+
+    .servicios div p {
+        font-size: 9px;
+    }
+
+    .servicios {
+        grid-template-rows: 50px 90px 90px 90px;
+    }
+
+    .servicios div a {
+        font-size: 8px;
+    }
+
+    /*FOOTER*/
+    footer {
+        grid-template-rows: 41px 50px 50px 30px;
+    }
+
+    .footer-contacto {
+        padding-left: 0px;
+    }
+
+    .footer-contacto h3 {
+        font-size: 10px;
+    }
+
+    .footer-contacto a {
+        font-size: 8px;
+    }
+
+    .footer-oficina h3 {
+        font-size: 10px;
+    }
+
+    .footer-oficina div p {
+        font-size: 8px;
+        padding-top: 2px;
+        height: 2px;
+    }
+
+    .footer-social h3 {
+        font-size: 10px;
+    }
+
+    .footer-social a {
+        font-size: 8px;
+        height: 1px;
+        padding-top: 0px;
+    }
+
+    .footer-social a img {
+        border-radius: 2px;
+    }
+
+    .footer-backtotop a {
+        font-size: 8px;
+    }
+
+    .footer-derechos {
+        font-size: 8px;
+    }
+
+    /*ARQUITECTURA*/
+    .hero-arquitectura h2 {
+        font-size: 18px;
+        border-radius: 0px 20px 0px 20px;
+        padding: 15px 10px 15px 10px;
+        margin-top: 30px;
+    }
+
+    .info-arquitectura{
+        height: 400px;
+    }
+    .info-arquitectura div p {
+        font-size: 9px;
+    }
+    .arquitectura-proyectos h2{
+        font-size: 15px;
+        margin-top: 0px;
+    }
+    .arquitectura-tarjetas div{
+        width: 300px;
+        height: 330px;
+    }
+    .arquitectura-tarjetas div h3{
+        font-size: 13px;
+    }
+    .arquitectura-tarjetas div p{
+        font-size: 9px;
+        padding-bottom: 0PX;
+    }
+    .arquitectura-tarjetas div a{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:530px) {
+
+    /*NAV-BAR*/
+    .navbar-toggler {
+        padding: 2px !important;
+    }
+
+    .navbar-toggler-icon {
+        width: 40%;
+    }
+
+    /*INDEX*/
+    .hero {
+        width: 100%;
+        height: 250px;
+    }
+
+    .hero img {
+        width: 15%;
+        padding: 8px;
+        border-radius: 0px 10px 0px 10px;
+        margin: 25px 0px 10px 0px;
+    }
+
+    .hero h2 {
+        font-size: 10px;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .hero a {
+        font-size: 8px;
+        border-radius: 0px 8px 0px 8px;
+        padding: 2px;
+        margin: 3px;
+    }
+
+    .bienvenidos {
+        height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .bienvenidos-imagen1 {
+        position: relative;
+        left: -10px;
+        z-index: -1;
+    }
+
+    .bienvenidos-imagen2 {
+        position: relative;
+        bottom: 30px;
+        left: 50px;
+        z-index: -2;
+    }
+
+    .bienvenidos div{
+        width: 80%;
+        text-align: justify;
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto;
+        margin-top: 10px;
+    }
+
+    .bienvenidos div img{
+        width: 30%;
+    }
+
+    .bienvenidos div h3 {
+        font-size: 12px;
+        text-align: left;
+        padding: 0px;
+        margin: 0px 0px 10px 0px; 
+    }
+
+    .bienvenidos div p {
+        width: 100%;
+        font-size: 8px;
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .elegirnos {
+        display: block;
+        height: auto;
+    }
+
+    .elegirnos div {
+        /*display: block;*/
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .elegirnos div h3 {
+        margin: 20px 0px 5px 0px;
+    }
+
+    .elegirnos div p {
+        text-align: justify;
+        margin-right: 0px;
+    }
+
+    .elegirnos img {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 50px 20px 50px;
+        margin: 0px;
+    }
+
+    .servicios {
+        grid-template-rows: 50px 90px 110px 90px;
+    }
+
+    .servicios div h4 {
+        font-size: 8px;
+    }
+
+    /*FOOTER*/
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "logo"
+            "contacto"
+            "oficina"
+            "social"
+            "backtotop"
+            "isotipo"
+            "derechos";
+    }
+
+    .footer-logo {
+        font-size: 20px;
+        height: 22px;
+    }
+
+    .footer-contacto h3 {
+        font-size: 9px;
+        margin-bottom: 0px;
+    }
+
+    .footer-contacto a {
+        font-size: 7px;
+        padding-top: 0px;
+    }
+
+    .footer-oficina h3 {
+        font-size: 9px;
+    }
+
+    .footer-oficina div p {
+        font-size: 7px;
+        padding-top: 2px;
+        height: 2px;
+    }
+
+    .footer-social h3 {
+        font-size: 9px;
+    }
+
+    .footer-social a {
+        font-size: 7px;
+        height: 1px;
+        padding-top: 0px;
+    }
+
+    .footer-social a img {
+        width: 2%;
+        border-radius: 2px;
+    }
+
+    .footer-backtotop a {
+        font-size: 7px;
+    }
+
+    .footer-backtotop a img {
+        width: 1.5%;
+        border-radius: 2px;
+    }
+
+    .footer-isotipo {
+        margin-top: 0px;
+    }
+
+    .footer-isotipo img {
+        margin-top: 0px;
+    }
+
+    .footer-derechos {
+        margin-top: 5px;
+    }
+
+    .footer-derechos p {
+        font-size: 7px;
+        margin-bottom: 0px;
+    }
+
+    /*WHATSAPP*/
+    .whatsapp a img {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    .whatsapp a img {
+        width: 4%;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    /*ARQUITECTURA*/
+
+    .hero-arquitectura {
+        height: 250px;
+        position: static;
+        top: 0px;
+    }
+
+    .hero-arquitectura h2 {
+        font-size: 14px;
+        border-radius: 0px 15px 0px 15px;
+    }
+
+    .hero-arquitectura p {
+        font-size: 10px;
+        padding: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .info-arquitectura{
+        height: auto;
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .info-arquitectura div {
+        width: 90%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .info-arquitectura div p{
+        text-align: justify;
+        margin-left: 0px;
+    }
+    .info-arquitectura img{
+        width: 50%;
+        padding: 10px 30px 20px 30px;
+        margin: 0px;
+    }
+    .info-arquitectura-imagen_2 {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+    /*NAV-BAR*/
+    .navbar div a {
+        font-size: 10px;
+    }
+
+    .navbar-brand {
+        padding: 10px;
+    }
+
+    .navbar-collapse ul li a {
+        font-size: 12px;
+    }
+
+    .d-flex input {
+        font-size: 12px;
+    }
+
+    .navbar-toggler-icon {
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /*INDEX*/
+    .hero {
+        height: 200px;
+        position: static;
+        top: 0px;
+    }
+
+    .hero img {
+        width: 15%;
+        padding: 7px;
+        border-radius: 0px 10px 0px 10px;
+    }
+
+    .hero h2 {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    .hero a {
+        font-size: 5px;
+        border-radius: 0px 5px 0px 5px;
+        padding: 2px;
+        margin: 3px;
+    }
+
+    .bienvenidos-imagen1{
+        left: -30px;
+    }
+
+    .bienvenidos-imagen2{
+        left: 30px;
+    }
+
+    .elegirnos div h3 {
+        font-size: 10px;
+        margin-right: 0px;
+    }
+
+    .elegirnos div p {
+        font-size: 8px;
+        text-align: justify;
+        margin-right: 0px;
+    }
+
+    .elegirnos img {
+        width: 100%;
+        padding: 10px 60px 10px 60px;
+        margin: 0px;
+    }
+
+    .servicios {
+        grid-template-rows: 50px 80px 100px 80px;
+    }
+
+    .servicios div h3 {
+        font-size: 10px;
+    }
+
+    .servicios div h4 {
+        font-size: 6px;
+    }
+
+    .servicios div h5 {
+        font-size: 9px;
+    }
+
+    .servicios div p {
+        font-size: 8px;
+        margin-bottom: 0px;
+    }
+
+    .servicios div a {
+        font-size: 5px;
+        border-radius: 0px 5px 0px 5px;
+        margin: 0px;
+    }
+
+    /*FOOTER*/
+    .footer-contacto h3 {
+        font-size: 8px;
+        margin-bottom: 0px;
+    }
+
+    .footer-contacto a {
+        font-size: 7px;
+        padding-top: 0px;
+    }
+
+    .footer-oficina h3 {
+        font-size: 8px;
+    }
+
+    .footer-oficina div p {
+        font-size: 7px;
+        padding-top: 2px;
+        height: 2px;
+    }
+
+    .footer-social h3 {
+        font-size: 8px;
+    }
+
+    .footer-social a {
+        font-size: 7px;
+        height: 1px;
+        padding-top: 0px;
+    }
+
+    .footer-derechos p {
+        font-size: 6px;
+        margin-bottom: 0px;
+    }
+
+    /*WHATSAPP*/
+    .whatsapp a img {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    /*ARQUITECTURA*/
+    .hero-arquitectura {
+        height: 200px;
+        position: static;
+        top: 0px;
+    }
+
+    .hero-arquitectura h2 {
+        font-size: 12px;
+        border-radius: 0px 10px 0px 10px;
+        padding: 10px 5px 10px 5px;
+    }
+
+    .hero-arquitectura p {
+        font-size: 10px;
+        padding: 4px;
+        margin-top: 0px;
+    }
+    .info-arquitectura div p{
+        font-size: 8px;
+    }
+    .arquitectura-proyectos h2{
+        font-size: 13px;
+        margin-top: 10px;
+    }
+    .arquitectura-tarjetas div h3{
+        font-size: 10px;
+    }
+    .arquitectura-tarjetas div p{
+        font-size: 8px;
+        padding-bottom: 0PX;
+    }
+}

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>AnDeStudio. | Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand titulonav" href="#">AnDeStudio.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/arquitectura.html">Arquitectura</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/interiorismo.html">Interiorismo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/asesoramiento.html">Asesoramiento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/estudio.html">Studio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn boton" type="submit"><img src="../img/search-lupa.png" alt=""></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-contacto">
+            <h2>Contacto</h2>
+            <p>Ponte en contacto con nosotros</p>
+        </section>
+        <div class="consultas-generales">
+            <img src="../img/consultas-generales.jpg" alt="persona trabajando en una computadora">
+            <div>
+                <h2>Consultas generales</h2>
+                <p>Para consultas generales no dudes en ponerte en contacto con nosotros enviando un mail a</p>
+                <a href="http://hotmail.com/" target="_blank">anidel97@hotmail.com</a>
+            </div>
+        </div>
+        <div class="consultas-de-proyecto">
+            <h2>Consultas de proyecto</h2>
+            <p>Rellená el formulario a continuación, contanos acerca de tus ideas, necesidades y/o espacios. Nos pondremos en contacto con vos para coordinar una entrevista</p>
+            <!--<img src="../img/consultas-de-proyecto.jpg" alt="">-->
+        </div>
+        <form action="" method="" enctype="" class="formulario-contacto">
+            <div>
+                <label for="nombre">Nombre*</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+            </div>
+            <div>
+                <label for="apellido">Apellido*</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido">
+            </div>
+            <div>
+                <label for="adress">Dirección*</label>
+                <input type="text" name="adress" id="adress" placeholder="Escribe tu dirección">
+            </div>
+            <div>
+                <label for="mail">Email*</label>
+                <input type="email" name="mail" id="mail" placeholder="Escribe tu mail">
+            </div>
+            <div class="servicio-a-consultar">
+                <label for="servicios">Servicios a consultar*</label>
+                <select name="servicios" id="Servicio a consultar">
+                    <label for="Servicios">Servicio a consultar</label>
+                    <option value="">Arquitectura</option>
+                    <option value="">Interiorismo</option>
+                    <option value="">Asesoramiento a distancia</option>
+                </select>
+            </div>
+            <!--<div>
+                <label for="ambiente">Cantidad de ambientes</label>
+                <select name="ambiente" id="ambiente">
+                    <label for="ambiente"></label>
+                    <option value="">1 ambiente</option>
+                    <option value="">2 ambientes o más</option>
+                    <option value="">Proyecto completo</option>
+                </select>
+            </div>
+            <!--INPUT CHECKBOX PRUEBA-->
+            <div class="checkbox-ambientes">
+                <label for="ambiente">Cantidad de ambientes</label>
+                <div>
+                    <label for="1chechbox"><input type="checkbox" name="1checkbox" id="">1 ambiente</label>
+                    <label for="2chechbox"><input type="checkbox" name="2checkbox" id="">2 ambientes o más</label>
+                    <label for="3chechbox"><input type="checkbox" name="3checkbox" id="">Proyecto completo</label>
+                </div>
+            </div>
+            <div class="contanos-tu-proyecto">
+                <label for="comentario">Contanos acerca de tu proyecto*</label>
+                <textarea name="comentario" id="comentario" placeholder="Escribe aqui"></textarea>
+            </div>
+            <div class="honorarios">
+                <label for="honorario">¿Cuánto estás dispuesto a invertir en nuestro servicio? Refiere a honorarios profesionales</label>
+                <select name="honorario" id="honorario">
+                    <option value="">USD 500</option>
+                    <option value="">USD 1000</option>
+                    <option value="">USD 2000</option>
+                    <option value="">+ USD 2500</option>
+                </select>
+            </div>
+            <div class="presupuesto">
+                <label for="comentario">¿Cuál es tu presupuesto para realizar el proyecto?</label>
+                <textarea name="comentario" id="comentario" placeholder="Escribe aqui"></textarea>
+            </div>
+            <input type="submit" class="submit-contacto">
+            <input type="reset" class="reset-contacto">
+        </form>
+        <div class="whatsapp">
+            <a href=""><img src="../img/whatsapp-logo.png" alt=""></a>
+        </div>
+    </main>
+    <footer>
+        <h2 class="footer-logo">AnDeStudio.</h2>
+        <div class="footer-contacto">
+            <h3>Contacto</h3>
+            <a href="http://hotmail.com/" target="_blank">anidel97@hotmail.com</a>
+        </div>
+        <div class="footer-oficina">
+            <h3>Oficina</h3>
+            <div>
+                <p>ARGENTINA</p>
+                <P>Venado Tuerto, Santa Fe</P>
+                <p>+5493462____</p>
+            </div>
+        </div>
+        <div class="footer-social">
+            <h3>Social</h3>
+            <a href="https://web.facebook.com/anahi.delgado.77/" target="_blank"><img src="../img/facebook-logo.png"
+                    alt="logo de facebook">Facebook</a>
+            <a href="https://www.instagram.com/nimdelgado/" target="_blank"><img src="../img/instagram-logo.png"
+                    alt="logo de instagram">Instagram</a>
+        </div>
+        <!--?enlace interno-->
+        <div class="footer-backtotop">
+            <a href="#hero"><img src="../img/flecha-arriba.png" alt="">Back to Top</a>
+        </div>
+        <div class="footer-isotipo">
+            <img src="../img/isotipo.png" alt="Isotipo de AnDeStudio.">
+        </div>
+        <div class="footer-derechos">
+            <p>© 2024 AnDeStudio. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

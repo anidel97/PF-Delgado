@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<!--Como hacer un sitio de varios idiomas?-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>AnDeStudio. | Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--?cabeza-->
+    <header>
+        <!--?barra de navegacion-->
+        <!--!LOGO-->
+        <!--<h1>AnDeStudio.</h1>-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand titulonav" href="#">AnDeStudio.</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/arquitectura.html">Arquitectura</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/interiorismo.html">Interiorismo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/asesoramiento.html">Asesoramiento</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/estudio.html">Studio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn boton" type="submit"><img src="./img/search-lupa.png" alt=""></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- <nav>
+            <!--!LISTA DESORDENADA-->
+        <!--<ul>
+            <li><a href="./index.html">Inicio</a></li>
+            <li><a href="./pages/arquitectura.html">Arquitectura</a></li>
+            <li><a href="./pages/interiorismo.html">Interiorismo</a></li>
+            <li><a href="./pages/asesoramiento.html">Asesoramiento</a></li>
+            <li><a href="./pages/estudio.html">Studio</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
+        </ul>
+        </nav>-->
+    </header>
+    <!--?main contiene el contenido principal de la pagina-->
+    <main>
+        <!--?section divide el contenido en partes que se relacionan entre sí-->
+        <section class="hero" id="hero">
+            <img src="./img/logo-andes-claro.png" alt="Logo AnDeStudio">
+            <h2>Arquitectura & Interiorismo</h2>
+            <a href="./pages/Contacto.html">Contactanos</a>
+        </section>
+        <section class="bienvenidos">
+            <div>
+                <img src="./img/bienvenidos.jpg" alt="Imagen de bienvenida-espacio social y una escalera"
+                    class="bienvenidos-imagen1">
+                <img src="./img/bienvenidos-dos.jpg" alt="arquitectura comercial-barra de restó"
+                    class="bienvenidos-imagen2">
+            </div>
+            <div>
+                <h3>Te ayudamos a hacer realidad tus sueños</h3>
+                <p>AnDeS se caracteriza por su gran interés en todas las etapas del diseño y el interiorismo.</p>
+                <p>Nuestro enfoque colaborativo nos permite crear espacios únicos y funcionales que superen las
+                expectativas de quienes confían en nosotros.</p>
+                <p>En AnDeS, estamos comprometidos en hacer realidad tus sueños arquitectónicos</p>
+            </div>
+        </section>
+        <section class="elegirnos">
+            <div>
+                <h3>¿Por qué elegirnos?</h3>
+                <p>AnDeS se destaca por su enfoque creativo, su atención al detalle y su compromiso con la excelencia en cada diseño.</p>
+                <p>Nos enorgullece trabajar codo a codo con nuestros clientes, escuchando atentamente sus ideas y
+                necesidades para desarrollar un proyecto que  refleje su visión y personalidad.</p>
+                <p>Confiá en AnDeS para hacer realidad tus sueños arquitectónicos y marcar la diferencia en el mundo de
+                la construcción. ¡Estamos aquí para ayudarte a alcanzar tus metas!</p>
+            </div>
+            <img src="./img/elegirnos.jpg" alt="Reunión de equipo de trabajo">
+        </section>
+        <section class="servicios">
+            <!--como poner una volanta por encima del titulo de la seccion???-->
+            <!--como poner imagenes que vayan pasando???-->
+            <div class="servicios-imagenes">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="2000">
+                            <img src="./img/servicios-uno.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./img/servicios-dos.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="./img/servicios-tres.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="servicios-titulo">
+                <h4>Nos enfocamos en la excelencia</h4>
+                <h3>Servicios que ofrecemos</h3>
+            </div>
+            <div class="servicios-arquitectura">
+                <h5>Arquitectura</h5>
+                <p>Servicio de asesoría, planificación y diseño para la creación y/o mejora de espacios personalizados, asegurando que cada espacio se utilice de manera eficiente, reflejando el estilo y las necesidades de cada cliente.</p>
+                <a href="./pages/Arquitectura.html">Saber más</a><hr/>
+            </div>
+            <div class="servicios-interiorismo">
+                <h5>Interiorismo</h5>
+                <p>Servicio de diseño, planificación y materialización de edificaciones y espacios urbanos, enfocado en la creación de proyectos estéticos, funcionales y sostenibles que cumplan con las expectativas solicitadas.</p>
+                <a href="./pages/Interiorismo.html">Saber más</a><hr/>
+            </div>
+            <div class="servicios-asesoramiento">
+                <h5>Asesoramiento</h5>
+                <p>Asesoramiento físico o a distancia de todas nuestras áreas, sin englobar el 100% de las incumbencias de las mismas, donde se trabaja codo a codo con las consultas particulares de cada cliente.</p>
+                <a href="./pages/Asesoramiento.html">Saber más</a><hr/>
+            </div>
+        </section>
+        <div class="whatsapp">
+            <a href=""><img src="./img/whatsapp-logo.png" alt="logo de whatsapp"></a>
+        </div>
+
+
+    </main>
+    <!--?footer es el pie de pagina-->
+    <footer>
+        <h2 class="footer-logo">AnDeStudio.</h2>
+        <div class="footer-contacto">
+            <h3>Contacto</h3>
+            <a href="http://hotmail.com/" target="_blank">anidel97@hotmail.com</a>
+        </div>
+        <div class="footer-oficina">
+            <h3>Oficina</h3>
+            <div>
+                <p>ARGENTINA</p>
+                <P>Venado Tuerto, Santa Fe</P>
+                <p>+5493462____</p>
+            </div>
+        </div>
+        <div class="footer-social">
+            <h3>Social</h3>
+            <a href="https://web.facebook.com/anahi.delgado.77/" target="_blank"><img src="./img/facebook-logo.png"
+                    alt="logo de facebook">Facebook</a>
+            <a href="https://www.instagram.com/nimdelgado/" target="_blank"><img src="./img/instagram-logo.png"
+                    alt="logo de instagram">Instagram</a>
+        </div>
+        <!--?enlace interno-->
+        <div class="footer-backtotop">
+            <a href="#hero"><img src="./img/flecha-arriba.png" alt="">Back to Top</a>
+        </div>
+        <div class="footer-isotipo">
+            <img src="./img/isotipo.png" alt="Isotipo de AnDeStudio.">
+        </div>
+        <div class="footer-derechos">
+            <p>© 2024 AnDeStudio. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
