@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-<!--Como hacer un sitio de varios idiomas?-->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>AnDeStudio. | Inicio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--?DESCRIPTION-->
+    <meta name="description" content="Haz realidad tus sueños arquitectónicos con AnDeStudio. Creamos espacios únicos y funcionales en arquitectura e interiorismo, reflejando tu estilo y necesidades. ¡Contáctanos!">
+    <!--?KEYWORDS-->
+    <meta name="keywords" content="arquitectura, interiorismo, proyecto de arquitectura, diseño, diseño arquitectónico, proyectos personalizados, estudio de arquitectura, planificación de espacios, espacios unicos, estilo, funcionalidad, diseño de interiores, diseño arquitectonico, andestudio, estudio de arquitectura andes, estudio andes">
+    <!--?CSS-->
+    <link rel="stylesheet" href="./css/estilos.css">
+    <!--css back up-->
+    <!--<link rel="stylesheet" href="./css/style.css">-->
+    <!--?FAVICON-->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <!--?TITLE-->
+    <title>AnDeStudio. Arquitectura&Interiorismo | Inicio</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
     <!--?cabeza-->
     <header>
         <!--?barra de navegacion-->
-        <!--!LOGO-->
-        <!--<h1>AnDeStudio.</h1>-->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand titulonav" href="#">AnDeStudio.</a>
@@ -48,40 +55,29 @@
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                        <button class="btn boton" type="submit"><img src="./img/search-lupa.png" alt=""></button>
+                        <button class="btn boton" type="submit"><img src="./img/search-lupa.png" alt="Lupa de búsqueda-busque aquí lo que necesita"></button>
                     </form>
                 </div>
             </div>
         </nav>
-        <!-- <nav>
-            <!--!LISTA DESORDENADA-->
-        <!--<ul>
-            <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./pages/arquitectura.html">Arquitectura</a></li>
-            <li><a href="./pages/interiorismo.html">Interiorismo</a></li>
-            <li><a href="./pages/asesoramiento.html">Asesoramiento</a></li>
-            <li><a href="./pages/estudio.html">Studio</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-        </nav>-->
     </header>
     <!--?main contiene el contenido principal de la pagina-->
     <main>
         <!--?section divide el contenido en partes que se relacionan entre sí-->
         <section class="hero" id="hero">
             <img src="./img/logo-andes-claro.png" alt="Logo AnDeStudio">
-            <h2>Arquitectura & Interiorismo</h2>
-            <a href="./pages/Contacto.html">Contactanos</a>
+            <h1>Arquitectura & Interiorismo</h1>
+            <a href="./pages/contacto.html">Contactanos</a>
         </section>
         <section class="bienvenidos">
             <div>
-                <img src="./img/bienvenidos.jpg" alt="Imagen de bienvenida-espacio social y una escalera"
+                <img src="./img/bienvenidos.jpg" alt="Imagen de bienvenida-espacio social, un living y una terraza"
                     class="bienvenidos-imagen1">
                 <img src="./img/bienvenidos-dos.jpg" alt="arquitectura comercial-barra de restó"
                     class="bienvenidos-imagen2">
             </div>
             <div>
-                <h3>Te ayudamos a hacer realidad tus sueños</h3>
+                <h2>Te ayudamos a hacer realidad tus sueños</h2>
                 <p>AnDeS se caracteriza por su gran interés en todas las etapas del diseño y el interiorismo.</p>
                 <p>Nuestro enfoque colaborativo nos permite crear espacios únicos y funcionales que superen las
                 expectativas de quienes confían en nosotros.</p>
@@ -90,7 +86,7 @@
         </section>
         <section class="elegirnos">
             <div>
-                <h3>¿Por qué elegirnos?</h3>
+                <h2>¿Por qué elegirnos?</h2>
                 <p>AnDeS se destaca por su enfoque creativo, su atención al detalle y su compromiso con la excelencia en cada diseño.</p>
                 <p>Nos enorgullece trabajar codo a codo con nuestros clientes, escuchando atentamente sus ideas y
                 necesidades para desarrollar un proyecto que  refleje su visión y personalidad.</p>
@@ -106,13 +102,13 @@
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="2000">
-                            <img src="./img/servicios-uno.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/servicios-uno.jpg" class="d-block w-100" alt="Arquitectura residencial - sala de estar">
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img src="./img/servicios-dos.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/servicios-dos.jpg" class="d-block w-100" alt=" interiorismo residencial - sala de estar">
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img src="./img/servicios-tres.jpg" class="d-block w-100" alt="...">
+                            <img src="./img/servicios-tres.jpg" class="d-block w-100" alt="Asesoramiento a distancia - mujer trabajando en computadora">
                         </div>
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -128,30 +124,29 @@
                 </div>
             </div>
             <div class="servicios-titulo">
-                <h4>Nos enfocamos en la excelencia</h4>
+                <h2>Nos enfocamos en la excelencia</h2>
                 <h3>Servicios que ofrecemos</h3>
             </div>
             <div class="servicios-arquitectura">
-                <h5>Arquitectura</h5>
+                <h4>Arquitectura</h4>
                 <p>Servicio de asesoría, planificación y diseño para la creación y/o mejora de espacios personalizados, asegurando que cada espacio se utilice de manera eficiente, reflejando el estilo y las necesidades de cada cliente.</p>
                 <a href="./pages/Arquitectura.html">Saber más</a><hr/>
             </div>
             <div class="servicios-interiorismo">
-                <h5>Interiorismo</h5>
+                <h4>Interiorismo</h4>
                 <p>Servicio de diseño, planificación y materialización de edificaciones y espacios urbanos, enfocado en la creación de proyectos estéticos, funcionales y sostenibles que cumplan con las expectativas solicitadas.</p>
                 <a href="./pages/Interiorismo.html">Saber más</a><hr/>
             </div>
             <div class="servicios-asesoramiento">
-                <h5>Asesoramiento</h5>
+                <h4>Asesoramiento</h4>
                 <p>Asesoramiento físico o a distancia de todas nuestras áreas, sin englobar el 100% de las incumbencias de las mismas, donde se trabaja codo a codo con las consultas particulares de cada cliente.</p>
                 <a href="./pages/Asesoramiento.html">Saber más</a><hr/>
             </div>
         </section>
         <div class="whatsapp">
-            <a href=""><img src="./img/whatsapp-logo.png" alt="logo de whatsapp"></a>
+            <a href=""><img src="./img/whatsapp-logo.png" alt="Logo de whatsapp - escríbenos por aquí"></a>
         </div>
-
-
+        
     </main>
     <!--?footer es el pie de pagina-->
     <footer>
@@ -171,13 +166,13 @@
         <div class="footer-social">
             <h3>Social</h3>
             <a href="https://web.facebook.com/anahi.delgado.77/" target="_blank"><img src="./img/facebook-logo.png"
-                    alt="logo de facebook">Facebook</a>
+                    alt="Logo de facebook">Facebook</a>
             <a href="https://www.instagram.com/nimdelgado/" target="_blank"><img src="./img/instagram-logo.png"
-                    alt="logo de instagram">Instagram</a>
+                    alt="Logo de instagram">Instagram</a>
         </div>
         <!--?enlace interno-->
         <div class="footer-backtotop">
-            <a href="#hero"><img src="./img/flecha-arriba.png" alt="">Back to Top</a>
+            <a href="#hero"><img src="./img/flecha-arriba.png" alt="Subir al inicio de página">Back to Top</a>
         </div>
         <div class="footer-isotipo">
             <img src="./img/isotipo.png" alt="Isotipo de AnDeStudio.">
@@ -186,6 +181,7 @@
             <p>© 2024 AnDeStudio. All rights reserved.</p>
         </div>
     </footer>
+    <!--bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

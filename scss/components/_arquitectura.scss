@@ -1,0 +1,122 @@
+/*  ARQUITECTURA  */
+.hero-arquitectura{
+    width: 100%;
+    height: calc(100vh - 90.4px);;
+    background-image: url(../img/hero-arquitectura.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: bottom;
+    color: $color-secundario;
+    @include flex(flex, start, center);
+    /*display: flex;
+    justify-content: start;
+    align-items: center;*/
+    flex-direction: column;
+    h1{
+        font-weight: 200;
+        font-size: nth($fonts , 6) /*40px*/;
+        color: $color-principal;
+        width: 20%;
+        background-color: $color-principal;
+        border-radius: 0px 30px 0px 30px;
+        margin-top: 60px;
+        padding: 30px 15px 30px 15px;
+        color: $color-secundario;
+        text-align: center;
+    }
+    p{
+        font-weight: 600;
+        font-size: nth($fonts , 4) /*25px*/;
+        color: $color-principal;
+        margin: 30px 0px 40px 0px;
+    }
+}
+
+.info-arquitectura{
+    width: 100%;
+    height: 600px;
+    @include flex (flex, space-evenly, center);
+    /*display: flex;
+    justify-content: space-evenly;
+    align-items: center;*/
+    img{
+        width: 20%;
+        padding: 5px;
+    }
+    .info-arquitectura-imagen_2{
+        display: none;
+    }
+    div{
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        p{
+            width: 100%;
+            font-weight: 100;
+            font-size: nth($fonts , 2) /*15px*/;
+            margin-left: 20px;
+            text-align: justify;
+        }
+    }
+}
+
+.arquitectura-proyectos{
+    h2{
+        font-family: "Mulish", sans-serif;
+        width: 80%;
+        font-weight: 200;
+        font-size: nth($fonts , 5) /*30px*/;
+        font-style: italic;
+        color: $color-principal;
+        margin: 10px 0px 10px 120px;
+    }
+    .arquitectura-tarjetas{
+        height: 420px;
+        @include flex (flex, space-evenly, center);
+        /*display: flex;
+        justify-content: space-evenly;
+        align-items: center;*/
+        flex-wrap: wrap;
+        div{
+            width: 350px;
+            height: 380px;
+            text-align: center;
+            border: 0.5px solid rgb(74, 80, 63);
+            border-radius: 0px 30px 0px 30px;
+            margin: 10px;
+            img{
+                width: 100%;
+                height: 204px;
+                object-fit: cover;
+                padding: 10px;
+            }
+            h3{
+                width: 100%;
+                font-weight: 200;
+                margin-top: 25px;
+                align-items: center;
+                justify-content: center;
+                color: $color-principal;
+            }
+            p{
+                width: 100%;
+                font-weight: 100;
+                font-size: nth($fonts , 2) /*15px*/;
+                padding: 10px;
+                margin-bottom: 10px;
+                color: $color-principal;
+            }
+            a{
+                width: 100%;
+                font-family: "Mulish", sans-serif;
+                font-size: nth($fonts , 2) /*15px*/;
+                @extend %enlaces; 
+                justify-content: center;
+                align-items: center;
+                background-color: $color-secundario;
+                padding: 5px 10px 5px 10px;
+                border-radius: 0px 15px 0px 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+/*  FOOTER  */
+
+footer{
+    width: 100%;
+    background-color: rgba(101, 109, 74, 0.677);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 41px 100px 100px 40px;
+    grid-template-areas:
+        "logo logo logo logo"
+        " contacto oficina social backtotop"
+        " isotipo isotipo isotipo isotipo"
+        " derechos derechos derechos derechos";
+    row-gap: 5px;
+    text-align: center;
+    h2{
+        width: 100%;
+        height: 42px;
+        font-weight: 100;
+        font-size: 40px;
+        background-color: white;
+        color: $color-secundario;
+        padding-bottom: 0px;
+        padding-left: 10px;
+        grid-column: span 4;
+        display: block;
+        text-align: left;
+    }
+    div{
+
+        h3{
+            font-weight: 400;
+            font-size: 13px;
+            text-transform: uppercase;
+            color: $color-secundario;
+        }
+        a{
+            font-weight: 100;
+            font-size: 12px;
+            text-decoration: none;
+            color: $color-secundario;
+            padding-top: 10px;
+        }
+    }
+}
+
+.footer-contacto{
+    width: 100%;
+    grid-area: contacto;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.footer-oficina{
+    width: 100%;
+    grid-area: oficina;
+    padding-top: 10px;
+    div{
+        p{
+            height: 4px;
+            font-weight: 100;
+            font-size: 13px;
+            color: $color-secundario;
+            padding-top: 10px;
+        }
+    }
+}
+
+.footer-social{
+    width: 100%;
+    grid-area: social;
+    padding-top: 10px;
+    h3{
+        font-weight: 400;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: $color-secundario;
+        align-items: center;
+    }
+    a{
+        height: 10px;
+        font-weight: 100;
+        font-size: 13px;
+        text-decoration: none;
+        color: $color-secundario;
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5px;
+        img{
+            width: 8%;
+            background-color: $color-secundario;
+            border-radius: 6px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            margin-right: 5px;
+            align-items: center;
+        }
+    }
+}
+
+.footer-backtotop{
+    width: 100%;
+    grid-area: backtotop;
+    text-align: center;
+    a{
+        font-weight: 100;
+        font-size: 13px;
+        text-decoration: none;
+        color: $color-secundario;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 7%;
+            background-color: $color-secundario;
+            border-radius: 6px;
+            margin-left: 5px;
+        }
+    }
+}
+
+.footer-isotipo{
+    width: 100%;
+    grid-area: isotipo;
+    grid-column: span 4;
+    text-align: center;
+    display: inline-block;
+    align-items: end;
+    margin-top: 5px;
+    img{
+        width: 5%;
+        margin-top: 30px;
+    }
+}
+
+.footer-derechos{
+    color: rgb(74, 80, 63);
+    font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 5px;
+    grid-area: derechos;
+    grid-column: span 4;
+    align-items: end;
+    margin-top: 20px;
+}

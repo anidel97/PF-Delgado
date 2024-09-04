@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/*---RESET--*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+    color: rgb(74, 80, 63);
+}
+
+/*  HEADER  */  
+
+header{
+    position: sticky;
+    top: 0;
+    nav{
+        font-family: "Mulish", sans-serif;
+        background-color: rgba(101, 109, 74, 0.677);
+        position: sticky;
+        top: 0px;
+    }
+}
+
+/* BOOTSTRAP */
+
+.navbar{
+    div{
+        a{
+            font-size: 40px;
+            font-weight: 400;
+            font-style: normal;
+            color: $color-secundario;
+            &:hover{
+                color: $color-principal;
+            }
+        }
+    }
+}
+
+.navbar-brand{
+    padding: 20px;
+}
+
+.nav-item{
+    a{
+        font-weight: 100;
+        font-size: 15px;
+        text-decoration: none;
+        color:$color-secundario;
+    }
+}
+
+.navbar-collapse{
+    ul{
+        li{
+            a{
+                font-weight: 100;
+                font-size: 15px;
+                text-decoration: none;
+                color: $color-secundario;
+            }
+        }
+    }
+}
+
+
+.d-flex{
+    width: 40%;
+    background-color: rgba(101, 109, 74, 0);
+    /*-- chequear el input, en el original estaba separado--*/
+    input{
+        width: 80%;
+        resize: none;
+        background-color: rgba(101, 109, 74, 0);
+        font-size: 15px;
+    }
+}
+
+header{
+    form{
+        .boton{
+            width: 10%;
+            border: 1px solid $color-secundario;
+            &:hover{
+                background-color: rgba(101, 109, 74, 0.304);
+                border: 2px solid $color-secundario;
+            }
+            img{
+                width: 100%;
+                border-color: $color-secundario;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        .d-flex{
+            width: 40%;
+        }
+    }
+}
