@@ -1,0 +1,107 @@
+/*   ESTUDIO   */
+
+.info-estudio{
+    width: 100%;
+    height: 600px;
+    @include flex (flex, space-evenly, center);
+
+    flex-direction: row-reverse;
+    img{
+        width: 25%;
+    }
+    div{
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h1{
+            width: 100%;
+            font-weight: 200;
+            font-size: nth($fonts, 5);
+            font-style: italic;
+            color: $color-principal;
+            margin: 20px 20px 20px 0px;
+        }
+        p{
+            width: 100%;
+            font-weight: 100;
+            font-size: nth($fonts, 2);
+            text-align: justify;
+        }
+    }
+}
+
+.estudio-inspiracion{
+    width: 85%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 80px 220px 220px 220px;
+    gap: 25px;
+    grid-template-areas:
+    "titulo titulo titulo" 
+    "bofill zumthor aalto"
+    "bofill norm casas"
+    "mateus cotaparedes casas";
+    margin: 5px auto;
+    h2{
+        width: 100%;
+        height: auto;
+        font-weight: 200;
+        font-size: nth($fonts , 5);
+        font-style: italic;
+        color: $color-principal;
+        margin: 30px 20px 20px 0px;
+        align-items: center;
+        grid-area: titulo;
+    }
+    div{
+        position: relative;
+        text-align: center;
+        transition: 2s;
+        overflow: hidden;
+        &:hover{
+            opacity: 30%;
+            h3{
+                position: absolute;
+                bottom: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 20px;
+                font-weight: 300;
+                color: $color-secundario;
+                text-shadow: 0px 0px 5px $color-principal;
+                visibility: visible;
+                opacity: 100%;
+            }
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+    }
+    .imagen-bofill{
+        grid-area: bofill;
+        
+    }
+    .imagen-zumthor{
+        grid-area: zumthor;
+    }
+    .imagen-aalto{
+        grid-area: aalto;
+    }
+    .imagen-norm{
+        grid-area: norm;
+    }
+    .imagen-casas{
+        grid-area: casas;
+    }
+    .imagen-mateus{
+        grid-area: mateus;
+    }
+    .imagen-cotaparedes{
+        grid-area: cotaparedes;
+    }
+}

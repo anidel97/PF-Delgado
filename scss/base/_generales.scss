@@ -15,6 +15,7 @@ body {
 /*  HEADER  */  
 
 header{
+    z-index: 1;
     position: sticky;
     top: 0;
     nav{
@@ -67,11 +68,9 @@ header{
     }
 }
 
-
 .d-flex{
     width: 40%;
     background-color: rgba(101, 109, 74, 0);
-    /*-- chequear el input, en el original estaba separado--*/
     input{
         width: 80%;
         resize: none;
@@ -90,7 +89,7 @@ header{
                 border: 2px solid $color-secundario;
             }
             img{
-                width: 100%;
+                width: 70%;
                 border-color: $color-secundario;
                 display: flex;
                 justify-content: center;

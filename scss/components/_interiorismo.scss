@@ -1,14 +1,53 @@
 /*  INTERIORISMO  */
+
 .hero-interiorismo{
     width: 100%;
     height: calc(100vh - 90.4px);
-    background-image: url();
+    background-image: url(../img/hero-interiorismo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    color: rgb(237, 224, 212);
-    display: flex;
+    color: $color-secundario;
+    @include flex (flex, start, center);
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
+    h1{
+        font-weight: 200;
+        font-size: nth($fonts, 6);
+        color: $color-principal;
+        background-color: $color-principal;
+        border-radius: 0px 30px 0px 30px;
+        margin-top: 60px;
+        padding: 30px 15px 30px 15px;
+        color: $color-secundario;
+        text-align: center;
+    }
+    p{
+        width: 50%;
+        font-weight: 600;
+        font-size: nth($fonts, 4);
+        color: $color-principal;
+        margin: 30px 0px 40px 0px;
+        text-align: center;
+    }
+}
+
+.info-interiorismo{
+    width: 100%;
+    height: 700px;
+    @include flex (flex, space-evenly, center);
+    img{
+        width: 25%;
+        padding: 5px;
+    }
+    div{
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        p{
+            width: 100%;
+            font-weight: 100;
+            font-size: nth($fonts, 2);
+            text-align: justify;
+        }
+    }
 }

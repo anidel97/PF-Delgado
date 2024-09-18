@@ -1,11 +1,14 @@
 /*  VARIABLES  */
+
 $color-principal:rgb(101, 109, 74);
 $color-secundario:rgb(237, 224, 212);
 
 /*  LISTAS  */
+
 $fonts: 13px, 15px, 18px, 25px, 30px, 40px;
 
 /*  EXTENDS  */
+
 %enlaces{
     text-decoration: none;
     color: $color-principal;

@@ -14,9 +14,6 @@ main {
     background-position: bottom;
     color: $color-secundario;
     @include flex (flex, start, center);
-    /*display: flex;
-    justify-content: start;
-    align-items: center;*/
     flex-direction: column;
     img{
         width: 20%;
@@ -37,8 +34,6 @@ main {
         font-family: "Mulish", sans-serif;
         font-size: nth($fonts, 2);
         @extend %enlaces;
-        /*text-decoration: none;
-        color: $color-principal;*/
         background-color: $color-secundario;
         padding: 10px;
         margin: 10px;
@@ -54,15 +49,9 @@ main {
     width: 90%;
     height: 600px;
     @include flex (flex, center, center);
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
     div{
         width: 50%;
         @include flex (flex, center, center);
-        /*display: flex;
-        justify-content: center;
-        align-items: center;*/
         flex-direction: column;
         margin: 0px auto;
         img{
@@ -91,7 +80,7 @@ main {
             font-weight: 300;
             font-size: nth($fonts , 2);
             padding: 5px;
-            text-align: left;
+            text-align: justify;
         }
     }
 }
@@ -101,20 +90,14 @@ main {
     height: 400px;
     background-color: rgb(213, 217, 200);
     @include flex (flex, center, center);
-    /*display: flex;
-    justify-content: center;
-    align-items: center;*/
     div{
         width: 50%;
         @include flex (flex, center, center);
-        /*display: flex;
-        justify-content: center;
-        align-items: center;*/
         flex-direction: column;
         h2{
             width: 100%;
             font-weight: 200;
-            font-size: nth($fonts , 5) /*30px*/;
+            font-size: nth($fonts , 5);
             font-style: italic;
             color: $color-principal;
             margin: 20px 20px 20px 0px;
@@ -122,8 +105,9 @@ main {
         p{
             width: 100%;
             font-weight: 300;
-            font-size: nth($fonts , 2) /*15px*/;
+            font-size: nth($fonts , 2);
             margin: 5px 20px 5px 0;
+            text-align: justify;
         }
     }
     img{
@@ -139,9 +123,6 @@ main {
     height: 500px;
     margin: 30px 0px 0px 0px;
     @include flex (grid, center, center);
-    /*display: grid;
-    justify-content: center;
-    align-items: center;*/
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 60px 125px 125px 120px;
     gap: 30px;
@@ -156,38 +137,36 @@ main {
         h2{
             width: 100%;
             font-weight: 100;
-            font-size: nth($fonts , 1) /*13px*/;
+            font-size: nth($fonts , 1);
             font-style: italic;
             text-align: left;
         }
         h3{
             width: 100%;
             font-weight: 200;
-            font-size: nth($fonts , 5) /*30px*/;
+            font-size: nth($fonts , 5);
             font-style: italic;
             color: $color-principal;
             }
         h4{
             width: 100%;
             font-weight: 500;
-            font-size: nth($fonts , 3) /*18px*/;
+            font-size: nth($fonts , 3);
             color: $color-principal;
             display: inline;
         }
         p{
             width: 100%;
             font-weight: 100;
-            font-size: nth($fonts , 2) /*15px*/;
+            font-size: nth($fonts , 2);
             margin: 5px 0px 10px 0px;
             text-align: justify;
         }
         a{
             width: 100%;
             font-family: "Mulish", sans-serif;
-            font-size: nth($fonts , 2) /*15px*/;
+            font-size: nth($fonts , 2);
             @extend %enlaces;
-            /*text-decoration: none;
-            color: $color-principal;*/
             background-color: $color-secundario;
             padding: 5px 10px 5px 10px;
             border-radius: 0px 15px 0px 15px;

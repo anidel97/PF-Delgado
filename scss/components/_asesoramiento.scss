@@ -1,0 +1,117 @@
+/*  ASESORAMIENTO  */
+
+.hero-asesoramiento{
+    width: 100%;
+    height: calc(100vh - 90.4px);
+    background-image: url(../img/hero-asesoramiento.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: $color-secundario;
+    @include flex(flex, start, center);
+    flex-direction: column;
+
+    h1{
+        font-weight: 200;
+        font-size: nth($fonts , 6);
+        color: $color-principal;
+        width: 20%;
+        background-color: $color-principal;
+        border-radius: 0px 30px 0px 30px;
+        margin-top: 60px;
+        padding: 30px 15px 30px 15px;
+        color: $color-secundario;
+        text-align: center;
+    }
+    p{
+        font-weight: 600;
+        font-size: nth($fonts , 4);
+        color: $color-principal;
+        margin: 30px 0px 40px 0px;
+    }
+}
+
+.info-asesoramiento{
+    width: 100%;
+    height: auto;
+    @include flex (flex, space-evenly, center);
+    img{
+        width: 25%;
+        margin: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    div{
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+        h2{
+            width: 100%;
+            font-weight: 200;
+            font-size: nth($fonts, 5);
+            font-style: italic;
+            color: $color-principal;
+            margin: 20px 20px 20px 0px;
+        }
+        p{
+            width: 100%;
+            font-weight: 300;
+            font-size: nth($fonts, 2);
+            text-align: justify;
+            span{
+                font-weight: 400;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.areas-asesoramiento{
+    width: 100%;
+    height: 350px;
+    margin: 0px auto;
+    align-items: center;
+    h2{
+        font-family: "Mulish", sans-serif;
+        font-weight: 200;
+        font-size: 20px;
+        font-style: italic;
+        padding-top: 30px;
+        color: $color-principal;
+        text-align: center;
+    }
+    .asesoramiento-tarjetas{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 30px auto;
+        div{
+            width: 320px;
+            text-align: center;
+            margin: 10px;
+            transition: 1.5s;
+            &:hover{
+                background-color: rgba(240, 239, 239, 0.26);
+                transform: scale(1.1);
+            }
+            h3{
+                width: 100%;
+                font-weight: 200;
+                margin-top: 25px;
+                align-items: center;
+                justify-content: center;
+                color: $color-principal;
+            }
+            p{
+                width: 100%;
+                font-weight: 100;
+                font-size: nth($fonts, 2);
+                padding: 10px;
+                margin-bottom: 10px;
+                color: $color-principal;
+            }
+        }
+    }
+}

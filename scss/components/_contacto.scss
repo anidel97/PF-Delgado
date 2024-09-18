@@ -1,0 +1,266 @@
+/*   CONTACTO   */
+
+.hero-contacto{
+    width: 100%;
+    height: calc(100vh - 90.4px);
+    background-image: url(../img/hero-asesoramiento.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color: $color-secundario;
+    @include flex (flex, start, center);
+    flex-direction: column;
+
+    h1{
+        font-weight: 200;
+        font-size: nth($fonts, 6);
+        color: $color-principal;
+        width: 20%;
+        background-color: $color-principal;
+        border-radius: 0px 30px 0px 30px;
+        margin-top: 60px;
+        padding: 30px 15px 30px 15px;
+        color: $color-secundario;
+        text-align: center;
+    }
+    p{
+        font-weight: 600;
+        font-size: nth($fonts, 4);
+        color: $color-principal;
+        margin: 30px 0px 40px 0px;
+    }
+}
+.consultas-generales{
+    width: 100%;
+    height: 400px;
+    @include flex (flex, space-evenly, center);
+    img{
+        width: 30%;
+        margin: 10px;
+        margin-left: 50px;
+    }
+    div{
+        h2{
+            font-weight: 200;
+            font-size: nth($fonts, 5);
+            font-style: italic;
+            margin: 15px;
+            color: $color-principal;
+        }
+        p{
+            font-weight: 100;
+            font-size: nth($fonts, 2);
+            margin: 20px 20px 40px 20px;
+            text-align: left;
+        }
+        a{
+            font-family: "Mulish", sans-serif;
+            font-size: nth($fonts, 2);
+            @extend %enlaces;
+            background-color: $color-secundario;
+            padding: 5px 10px 5px 10px;
+            margin: 20px;
+            border-radius: 0px 15px 0px 15px;
+            &:hover{
+                border: 1px solid rgba(101, 109, 74, 0);
+                box-shadow: 0px 0px 10px 0.5px;
+            }
+        }
+    }
+}
+.consultas-de-proyecto{
+    background-color: rgb(213, 217, 200);
+    font-family: "Mulish", sans-serif;
+    h2{
+        font-weight: 200;
+        font-size: nth($fonts, 5);
+        font-style: italic;
+        margin-top: 30px;
+        padding: 70px 0px 20px 30px;
+        color: $color-principal;
+    }
+    p{
+        font-weight: 100;
+        font-size: nth($fonts, 2);
+        padding: 0px 30px 30px 30px;
+        text-align: left;
+        display: block;
+    }
+}
+
+.formulario-contacto{
+    width: 100%;
+    color: $color-principal;
+    margin: 0px auto;
+    align-items: center;
+    .datos-basicos{
+        margin: 0px auto;
+        width: 100%;
+        @include flex (flex, center, center);
+        flex-direction: column;
+        label{
+            width: 40%;
+            font-weight: 400;
+            font-size: nth($fonts, 1);
+            padding: 15px 0px 0px 0px;
+            text-align: left;
+        }
+        input{
+            font-family: "Mulish", sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            width: 40%;
+            margin: 0px 20px 20px 15px;
+            padding: 5px;
+            text-align: left;
+            display: block;
+        } 
+    }
+    .servicio-a-consultar{
+        margin: 0px auto;
+        width: 100%;
+        @include flex (flex, center, center);
+        flex-direction: column;
+        label{
+            width: 40%;
+            font-weight: 400;
+            font-size: nth($fonts, 1);
+            padding: 15px 0px 0px 0px;
+            text-align: left;
+            display: block;
+        }
+        select{
+            font-family: "Mulish", sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            width: 40%;
+            margin: 0px 20px 20px 15px;
+            padding: 5px;
+            height: 30px;
+            resize: none;
+        }
+    }
+    .checkbox-ambientes{
+        margin: 0px auto;
+        width: 40%;
+        label{
+            display: block;
+            font-weight: 400;
+            font-size: nth($fonts, 1);
+            width: 40%;
+            padding: 0px;
+            height: 30px;
+        }
+        div{
+            input{
+                display: inline-block;
+                width: 5%;
+                margin: 0px 20px 0px 0px;
+                padding: 0px;
+                height: 20px;
+            }
+        }
+    }
+    .contanos-tu-proyecto{
+        margin: 0px auto;
+        width: 100%;
+        @include flex (flex, center, center);
+        flex-direction: column;
+        label{
+            width: 40%;
+            font-weight: 400;
+            font-size: nth($fonts, 1);
+            padding: 15px 15px 0px 0px;
+            display: inline-block;
+        }
+        textarea{
+            font-family: "Mulish", sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            width: 40%;
+            margin: 0px 20px 20px 15px;
+            padding: 5px;
+            text-align: left;
+            display: block;
+            resize: none;
+        }
+    }
+    .honorarios{
+        margin: 0px auto;
+        width: 100%;
+        @include flex (flex, center, center);
+        flex-direction: column;
+        color: $color-principal;
+        label{
+            width: 40%;
+            font-weight: 400;
+            font-size: nth($fonts, 1);
+            padding: 15px 15px 0px 0px;
+        }
+        select{
+            font-family: "Mulish", sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            width: 40%;
+            margin: 0px 20px 20px 15px;
+            padding: 5px;
+            height: 30px;
+            resize: none;
+            display: block;
+        }
+    }
+    .presupuesto{
+        margin: 0px auto;
+        width: 100%;
+        @include flex (flex, center, center);
+        flex-direction: column;
+        color: $color-principal;
+        label{
+            width: 40%;
+            font-weight: 400;
+            font-size: nth($fonts, 1);
+            padding: 15px 15px 0px 0px;
+        }
+        textarea{
+            font-family: "Mulish", sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            width: 40%;
+            margin: 0px 20px 20px 15px;
+            padding: 5px;
+            text-align: left;
+            display: block;
+            resize: none;
+        }
+    }
+    .submit-contacto{
+        font-family: "Mulish", sans-serif;
+        font-size: nth($fonts, 2);
+        padding: 5px 10px 5px 10px;
+        text-decoration: none;
+        color: $color-principal;
+        background-color: $color-secundario;
+        border-radius: 0px 15px 0px 15px;
+        border: none;
+        margin-left: 450px;
+        &:hover{
+            border: 1px solid rgba(101, 109, 74, 0);
+            box-shadow: 0px 0px 10px 0.5px;
+        }
+    }
+    .reset-contacto{
+        font-family: "Mulish", sans-serif;
+        font-size: nth($fonts, 2);
+        padding: 5px 10px 5px 10px;
+        margin: 15px;
+        text-decoration: none;
+        color: $color-principal;
+        background-color: $color-secundario;
+        border-radius: 0px 15px 0px 15px;
+        border: none;
+        &:hover{
+            border: 1px solid rgba(101, 109, 74, 0);
+            box-shadow: 0px 0px 10px 0.5px;
+        }
+    }
+}

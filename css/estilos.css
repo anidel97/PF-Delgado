@@ -2,7 +2,7 @@
 /*  LISTAS  */
 /*  EXTENDS  */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
-.hero a, .servicios div a, .arquitectura-proyectos .arquitectura-tarjetas div a {
+.hero a, .servicios div a, .arquitectura-proyectos .arquitectura-tarjetas div a, .consultas-generales div a {
   text-decoration: none;
   color: #656d4a; }
 
@@ -19,6 +19,7 @@ body {
 
 /*  HEADER  */
 header {
+  z-index: 1;
   position: sticky;
   top: 0; }
   header nav {
@@ -53,8 +54,7 @@ header {
 
 .d-flex {
   width: 40%;
-  background-color: rgba(101, 109, 74, 0);
-  /*-- chequear el input, en el original estaba separado--*/ }
+  background-color: rgba(101, 109, 74, 0); }
   .d-flex input {
     width: 80%;
     resize: none;
@@ -68,7 +68,7 @@ header form .boton {
     background-color: rgba(101, 109, 74, 0.304);
     border: 2px solid #ede0d4; }
   header form .boton img {
-    width: 100%;
+    width: 70%;
     border-color: #ede0d4;
     display: flex;
     justify-content: center;
@@ -93,9 +93,6 @@ main {
   display: flex;
   justify-content: start;
   align-items: center;
-  /*display: flex;
-    justify-content: start;
-    align-items: center;*/
   flex-direction: column; }
   .hero img {
     width: 20%;
@@ -113,8 +110,6 @@ main {
   .hero a {
     font-family: "Mulish", sans-serif;
     font-size: 15px;
-    /*text-decoration: none;
-        color: $color-principal;*/
     background-color: #ede0d4;
     padding: 10px;
     margin: 10px;
@@ -128,18 +123,12 @@ main {
   height: 600px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /*display: flex;
-    justify-content: center;
-    align-items: center;*/ }
+  align-items: center; }
   .bienvenidos div {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /*display: flex;
-        justify-content: center;
-        align-items: center;*/
     flex-direction: column;
     margin: 0px auto; }
     .bienvenidos div img {
@@ -163,7 +152,7 @@ main {
     font-weight: 300;
     font-size: 15px;
     padding: 5px;
-    text-align: left; }
+    text-align: justify; }
 
 .elegirnos {
   width: 100%;
@@ -171,18 +160,12 @@ main {
   background-color: #d5d9c8;
   display: flex;
   justify-content: center;
-  align-items: center;
-  /*display: flex;
-    justify-content: center;
-    align-items: center;*/ }
+  align-items: center; }
   .elegirnos div {
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /*display: flex;
-        justify-content: center;
-        align-items: center;*/
     flex-direction: column; }
     .elegirnos div h2 {
       width: 100%;
@@ -195,7 +178,8 @@ main {
       width: 100%;
       font-weight: 300;
       font-size: 15px;
-      margin: 5px 20px 5px 0; }
+      margin: 5px 20px 5px 0;
+      text-align: justify; }
   .elegirnos img {
     width: 30%;
     margin: 10px;
@@ -209,9 +193,6 @@ main {
   display: grid;
   justify-content: center;
   align-items: center;
-  /*display: grid;
-    justify-content: center;
-    align-items: center;*/
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 60px 125px 125px 120px;
   gap: 30px;
@@ -246,8 +227,6 @@ main {
     width: 100%;
     font-family: "Mulish", sans-serif;
     font-size: 15px;
-    /*text-decoration: none;
-            color: $color-principal;*/
     background-color: #ede0d4;
     padding: 5px 10px 5px 10px;
     border-radius: 0px 15px 0px 15px; }
@@ -282,15 +261,11 @@ main {
   display: flex;
   justify-content: start;
   align-items: center;
-  /*display: flex;
-    justify-content: start;
-    align-items: center;*/
   flex-direction: column; }
   .hero-arquitectura h1 {
     font-weight: 200;
     font-size: 40px;
     color: #656d4a;
-    width: 20%;
     background-color: #656d4a;
     border-radius: 0px 30px 0px 30px;
     margin-top: 60px;
@@ -308,10 +283,7 @@ main {
   height: 600px;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  /*display: flex;
-    justify-content: space-evenly;
-    align-items: center;*/ }
+  align-items: center; }
   .info-arquitectura img {
     width: 20%;
     padding: 5px; }
@@ -342,9 +314,6 @@ main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  /*display: flex;
-        justify-content: space-evenly;
-        align-items: center;*/
   flex-wrap: wrap; }
   .arquitectura-proyectos .arquitectura-tarjetas div {
     width: 350px;
@@ -352,7 +321,10 @@ main {
     text-align: center;
     border: 0.5px solid #4a503f;
     border-radius: 0px 30px 0px 30px;
-    margin: 10px; }
+    margin: 10px;
+    transition: 1.5s; }
+    .arquitectura-proyectos .arquitectura-tarjetas div:hover {
+      transform: scale(1.1); }
     .arquitectura-proyectos .arquitectura-tarjetas div img {
       width: 100%;
       height: 204px;
@@ -381,20 +353,488 @@ main {
       background-color: #ede0d4;
       padding: 5px 10px 5px 10px;
       border-radius: 0px 15px 0px 15px; }
+      .arquitectura-proyectos .arquitectura-tarjetas div a:hover {
+        border: 1px solid rgba(101, 109, 74, 0);
+        box-shadow: 0px 0px 10px 0.5px; }
 
-/*  INTERIORISMO  */
-.hero-interiorismo {
+/*  ASESORAMIENTO  */
+.hero-asesoramiento {
   width: 100%;
   height: calc(100vh - 90.4px);
-  background-image: url();
+  background-image: url(../img/hero-asesoramiento.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   color: #ede0d4;
   display: flex;
-  flex-direction: column;
   justify-content: start;
+  align-items: center;
+  flex-direction: column; }
+  .hero-asesoramiento h1 {
+    font-weight: 200;
+    font-size: 40px;
+    color: #656d4a;
+    width: 20%;
+    background-color: #656d4a;
+    border-radius: 0px 30px 0px 30px;
+    margin-top: 60px;
+    padding: 30px 15px 30px 15px;
+    color: #ede0d4;
+    text-align: center; }
+  .hero-asesoramiento p {
+    font-weight: 600;
+    font-size: 25px;
+    color: #656d4a;
+    margin: 30px 0px 40px 0px; }
+
+.info-asesoramiento {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center; }
+  .info-asesoramiento img {
+    width: 25%;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap; }
+  .info-asesoramiento div {
+    width: 50%;
+    justify-content: center;
+    align-items: center; }
+    .info-asesoramiento div h2 {
+      width: 100%;
+      font-weight: 200;
+      font-size: 30px;
+      font-style: italic;
+      color: #656d4a;
+      margin: 20px 20px 20px 0px; }
+    .info-asesoramiento div p {
+      width: 100%;
+      font-weight: 300;
+      font-size: 15px;
+      text-align: justify; }
+      .info-asesoramiento div p span {
+        font-weight: 400;
+        text-decoration: underline; }
+
+.areas-asesoramiento {
+  width: 100%;
+  height: 350px;
+  margin: 0px auto;
+  align-items: center; }
+  .areas-asesoramiento h2 {
+    font-family: "Mulish", sans-serif;
+    font-weight: 200;
+    font-size: 20px;
+    font-style: italic;
+    padding-top: 30px;
+    color: #656d4a;
+    text-align: center; }
+  .areas-asesoramiento .asesoramiento-tarjetas {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 30px auto; }
+    .areas-asesoramiento .asesoramiento-tarjetas div {
+      width: 320px;
+      text-align: center;
+      margin: 10px;
+      transition: 1.5s; }
+      .areas-asesoramiento .asesoramiento-tarjetas div:hover {
+        background-color: rgba(240, 239, 239, 0.26);
+        transform: scale(1.1); }
+      .areas-asesoramiento .asesoramiento-tarjetas div h3 {
+        width: 100%;
+        font-weight: 200;
+        margin-top: 25px;
+        align-items: center;
+        justify-content: center;
+        color: #656d4a; }
+      .areas-asesoramiento .asesoramiento-tarjetas div p {
+        width: 100%;
+        font-weight: 100;
+        font-size: 15px;
+        padding: 10px;
+        margin-bottom: 10px;
+        color: #656d4a; }
+
+/*   CONTACTO   */
+.hero-contacto {
+  width: 100%;
+  height: calc(100vh - 90.4px);
+  background-image: url(../img/hero-asesoramiento.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: #ede0d4;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column; }
+  .hero-contacto h1 {
+    font-weight: 200;
+    font-size: 40px;
+    color: #656d4a;
+    width: 20%;
+    background-color: #656d4a;
+    border-radius: 0px 30px 0px 30px;
+    margin-top: 60px;
+    padding: 30px 15px 30px 15px;
+    color: #ede0d4;
+    text-align: center; }
+  .hero-contacto p {
+    font-weight: 600;
+    font-size: 25px;
+    color: #656d4a;
+    margin: 30px 0px 40px 0px; }
+
+.consultas-generales {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .consultas-generales img {
+    width: 30%;
+    margin: 10px;
+    margin-left: 50px; }
+  .consultas-generales div h2 {
+    font-weight: 200;
+    font-size: 30px;
+    font-style: italic;
+    margin: 15px;
+    color: #656d4a; }
+  .consultas-generales div p {
+    font-weight: 100;
+    font-size: 15px;
+    margin: 20px 20px 40px 20px;
+    text-align: left; }
+  .consultas-generales div a {
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    background-color: #ede0d4;
+    padding: 5px 10px 5px 10px;
+    margin: 20px;
+    border-radius: 0px 15px 0px 15px; }
+    .consultas-generales div a:hover {
+      border: 1px solid rgba(101, 109, 74, 0);
+      box-shadow: 0px 0px 10px 0.5px; }
+
+.consultas-de-proyecto {
+  background-color: #d5d9c8;
+  font-family: "Mulish", sans-serif; }
+  .consultas-de-proyecto h2 {
+    font-weight: 200;
+    font-size: 30px;
+    font-style: italic;
+    margin-top: 30px;
+    padding: 70px 0px 20px 30px;
+    color: #656d4a; }
+  .consultas-de-proyecto p {
+    font-weight: 100;
+    font-size: 15px;
+    padding: 0px 30px 30px 30px;
+    text-align: left;
+    display: block; }
+
+.formulario-contacto {
+  width: 100%;
+  color: #656d4a;
+  margin: 0px auto;
+  align-items: center; }
+  .formulario-contacto .datos-basicos {
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .formulario-contacto .datos-basicos label {
+      width: 40%;
+      font-weight: 400;
+      font-size: 13px;
+      padding: 15px 0px 0px 0px;
+      text-align: left; }
+    .formulario-contacto .datos-basicos input {
+      font-family: "Mulish", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      width: 40%;
+      margin: 0px 20px 20px 15px;
+      padding: 5px;
+      text-align: left;
+      display: block; }
+  .formulario-contacto .servicio-a-consultar {
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .formulario-contacto .servicio-a-consultar label {
+      width: 40%;
+      font-weight: 400;
+      font-size: 13px;
+      padding: 15px 0px 0px 0px;
+      text-align: left;
+      display: block; }
+    .formulario-contacto .servicio-a-consultar select {
+      font-family: "Mulish", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      width: 40%;
+      margin: 0px 20px 20px 15px;
+      padding: 5px;
+      height: 30px;
+      resize: none; }
+  .formulario-contacto .checkbox-ambientes {
+    margin: 0px auto;
+    width: 40%; }
+    .formulario-contacto .checkbox-ambientes label {
+      display: block;
+      font-weight: 400;
+      font-size: 13px;
+      width: 40%;
+      padding: 0px;
+      height: 30px; }
+    .formulario-contacto .checkbox-ambientes div input {
+      display: inline-block;
+      width: 5%;
+      margin: 0px 20px 0px 0px;
+      padding: 0px;
+      height: 20px; }
+  .formulario-contacto .contanos-tu-proyecto {
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .formulario-contacto .contanos-tu-proyecto label {
+      width: 40%;
+      font-weight: 400;
+      font-size: 13px;
+      padding: 15px 15px 0px 0px;
+      display: inline-block; }
+    .formulario-contacto .contanos-tu-proyecto textarea {
+      font-family: "Mulish", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      width: 40%;
+      margin: 0px 20px 20px 15px;
+      padding: 5px;
+      text-align: left;
+      display: block;
+      resize: none; }
+  .formulario-contacto .honorarios {
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #656d4a; }
+    .formulario-contacto .honorarios label {
+      width: 40%;
+      font-weight: 400;
+      font-size: 13px;
+      padding: 15px 15px 0px 0px; }
+    .formulario-contacto .honorarios select {
+      font-family: "Mulish", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      width: 40%;
+      margin: 0px 20px 20px 15px;
+      padding: 5px;
+      height: 30px;
+      resize: none;
+      display: block; }
+  .formulario-contacto .presupuesto {
+    margin: 0px auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #656d4a; }
+    .formulario-contacto .presupuesto label {
+      width: 40%;
+      font-weight: 400;
+      font-size: 13px;
+      padding: 15px 15px 0px 0px; }
+    .formulario-contacto .presupuesto textarea {
+      font-family: "Mulish", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      width: 40%;
+      margin: 0px 20px 20px 15px;
+      padding: 5px;
+      text-align: left;
+      display: block;
+      resize: none; }
+  .formulario-contacto .submit-contacto {
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    color: #656d4a;
+    background-color: #ede0d4;
+    border-radius: 0px 15px 0px 15px;
+    border: none;
+    margin-left: 450px; }
+    .formulario-contacto .submit-contacto:hover {
+      border: 1px solid rgba(101, 109, 74, 0);
+      box-shadow: 0px 0px 10px 0.5px; }
+  .formulario-contacto .reset-contacto {
+    font-family: "Mulish", sans-serif;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+    margin: 15px;
+    text-decoration: none;
+    color: #656d4a;
+    background-color: #ede0d4;
+    border-radius: 0px 15px 0px 15px;
+    border: none; }
+    .formulario-contacto .reset-contacto:hover {
+      border: 1px solid rgba(101, 109, 74, 0);
+      box-shadow: 0px 0px 10px 0.5px; }
+
+/*   ESTUDIO   */
+.info-estudio {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse; }
+  .info-estudio img {
+    width: 25%; }
+  .info-estudio div {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    .info-estudio div h1 {
+      width: 100%;
+      font-weight: 200;
+      font-size: 30px;
+      font-style: italic;
+      color: #656d4a;
+      margin: 20px 20px 20px 0px; }
+    .info-estudio div p {
+      width: 100%;
+      font-weight: 100;
+      font-size: 15px;
+      text-align: justify; }
+
+.estudio-inspiracion {
+  width: 85%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 80px 220px 220px 220px;
+  gap: 25px;
+  grid-template-areas: "titulo titulo titulo"  "bofill zumthor aalto" "bofill norm casas" "mateus cotaparedes casas";
+  margin: 5px auto; }
+  .estudio-inspiracion h2 {
+    width: 100%;
+    height: auto;
+    font-weight: 200;
+    font-size: 30px;
+    font-style: italic;
+    color: #656d4a;
+    margin: 30px 20px 20px 0px;
+    align-items: center;
+    grid-area: titulo; }
+  .estudio-inspiracion div {
+    position: relative;
+    text-align: center;
+    transition: 2s;
+    overflow: hidden; }
+    .estudio-inspiracion div:hover {
+      opacity: 30%; }
+      .estudio-inspiracion div:hover h3 {
+        position: absolute;
+        bottom: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        font-weight: 300;
+        color: #ede0d4;
+        text-shadow: 0px 0px 5px #656d4a;
+        visibility: visible;
+        opacity: 100%; }
+    .estudio-inspiracion div img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+  .estudio-inspiracion .imagen-bofill {
+    grid-area: bofill; }
+  .estudio-inspiracion .imagen-zumthor {
+    grid-area: zumthor; }
+  .estudio-inspiracion .imagen-aalto {
+    grid-area: aalto; }
+  .estudio-inspiracion .imagen-norm {
+    grid-area: norm; }
+  .estudio-inspiracion .imagen-casas {
+    grid-area: casas; }
+  .estudio-inspiracion .imagen-mateus {
+    grid-area: mateus; }
+  .estudio-inspiracion .imagen-cotaparedes {
+    grid-area: cotaparedes; }
+
+/*  INTERIORISMO  */
+.hero-interiorismo {
+  width: 100%;
+  height: calc(100vh - 90.4px);
+  background-image: url(../img/hero-interiorismo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  color: #ede0d4;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column; }
+  .hero-interiorismo h1 {
+    font-weight: 200;
+    font-size: 40px;
+    color: #656d4a;
+    background-color: #656d4a;
+    border-radius: 0px 30px 0px 30px;
+    margin-top: 60px;
+    padding: 30px 15px 30px 15px;
+    color: #ede0d4;
+    text-align: center; }
+  .hero-interiorismo p {
+    width: 50%;
+    font-weight: 600;
+    font-size: 25px;
+    color: #656d4a;
+    margin: 30px 0px 40px 0px;
+    text-align: center; }
+
+.info-interiorismo {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .info-interiorismo img {
+    width: 25%;
+    padding: 5px; }
+  .info-interiorismo div {
+    width: 50%;
+    justify-content: center;
+    align-items: center; }
+    .info-interiorismo div p {
+      width: 100%;
+      font-weight: 100;
+      font-size: 15px;
+      text-align: justify; }
 
 /*  FOOTER  */
 footer {
@@ -486,9 +926,9 @@ footer {
     text-decoration: none;
     color: #ede0d4;
     display: flex;
-    flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
-    justify-content: center; }
+    flex-direction: row-reverse; }
     .footer-backtotop a img {
       width: 7%;
       background-color: #ede0d4;
@@ -499,7 +939,6 @@ footer {
   width: 100%;
   grid-area: isotipo;
   grid-column: span 4;
-  text-align: center;
   display: inline-block;
   align-items: end;
   margin-top: 5px; }
@@ -534,14 +973,25 @@ footer {
     margin-left: 50px; }
   .bienvenidos div p {
     margin-left: 50px; }
-  /*---ARQUITECTURA---*/
+  /*ARQUITECTURA*/
   .hero-arquitectura {
     width: 100%;
     height: 650px;
     position: static;
     background-repeat: no-repeat;
     background-size: cover;
-    top: 0px; } }
+    top: 0px; }
+  /*INTERIORISMO*/
+  .info-interiorismo {
+    height: 500px; }
+  /*ASESORAMIENTO*/
+  .areas-asesoramiento {
+    height: auto; }
+  /*ESTUDIO*/
+  .info-estudio {
+    height: auto; }
+  header form .boton {
+    width: 15%; } }
 
 @media screen and (max-width: 1199px) {
   /*NAV-BAR*/
@@ -588,6 +1038,53 @@ footer {
   .arquitectura-proyectos .arquitectura-tarjetas div {
     margin-bottom: 20px; }
   .arquitectura-proyectos .arquitectura-tarjetas div a {
+    font-size: 12px; }
+  /*INTERIORISMO */
+  .hero-interiorismo h1 {
+    font-size: 35px;
+    padding: 20px 10px 20px 10px; }
+  /*ASESORAMIENTO*/
+  .hero-asesoramiento h1 {
+    font-size: 35px;
+    padding: 20px 10px 20px 10px; }
+  /*ESTUDIO*/
+  .info-estudio img {
+    width: 30%; }
+  header form .boton {
+    width: 20%; }
+  /*CONTACTO*/
+  .hero-contacto h1 {
+    font-size: 35px;
+    padding: 20px 10px 20px 10px; }
+  .consultas-generales div a {
+    font-size: 12px; }
+  .formulario-contacto .datos-basicos label {
+    font-size: 12px; }
+  .formulario-contacto .datos-basicos input {
+    font-size: 11px; }
+  .formulario-contacto .servicio-a-consultar label {
+    font-size: 12px; }
+  .formulario-contacto .servicio-a-consultar select {
+    font-size: 11px; }
+  .formulario-contacto .checkbox-ambientes label {
+    font-size: 12px; }
+  .formulario-contacto .checkbox-ambientes div label {
+    font-size: 11px; }
+  .formulario-contacto .contanos-tu-proyecto label {
+    font-size: 12px; }
+  .formulario-contacto .contanos-tu-proyecto textarea {
+    font-size: 11px; }
+  .formulario-contacto .honorarios label {
+    font-size: 12px; }
+  .formulario-contacto .honorarios select {
+    font-size: 11px; }
+  .formulario-contacto .presupuesto label {
+    font-size: 12px; }
+  .formulario-contacto .presupuesto textarea {
+    font-size: 11px; }
+  .formulario-contacto .submit-contacto {
+    font-size: 12px; }
+  .formulario-contacto .reset-contacto {
     font-size: 12px; } }
 
 @media screen and (max-width: 1000px) {
@@ -605,8 +1102,6 @@ footer {
     align-items: center;
     justify-content: center; }
   .d-flex {
-    /*width: 100%;*/
-    /*display: flex;*/
     justify-content: center;
     margin: 0px auto; }
   /*INDEX*/
@@ -624,7 +1119,12 @@ footer {
     grid-template-rows: 40px 140px 140px 140px; }
   .servicios div a {
     font-size: 12px;
-    text-align: center; } }
+    text-align: center; }
+  /*ESTUDIO*/
+  .estudio-inspiracion {
+    height: auto;
+    grid-auto-rows: 80px 180px 180px 180px;
+    gap: 15px; } }
 
 @media screen and (max-width: 969px) {
   /*NAV-BAR*/
@@ -688,6 +1188,56 @@ footer {
   .arquitectura-proyectos .arquitectura-tarjetas div h3 {
     font-size: 22px; }
   .arquitectura-proyectos .arquitectura-tarjetas div p {
+    font-size: 14px; }
+  /*INTERIORISMO*/
+  .hero-interiorismo {
+    height: 400px; }
+  .hero-interiorismo h1 {
+    font-size: 30px;
+    border-radius: 0px 25px 0px 25px; }
+  .hero-interiorismo p {
+    font-size: 18px;
+    margin-bottom: 25px; }
+  .info-interiorismo div p {
+    font-size: 14px; }
+  /*ASESORAMIENTO*/
+  .hero-asesoramiento {
+    height: 400px; }
+  .hero-asesoramiento h1 {
+    font-size: 30px;
+    border-radius: 0px 25px 0px 25px; }
+  .hero-asesoramiento p {
+    font-size: 18px;
+    margin-bottom: 25px; }
+  .info-asesoramiento div h2 {
+    font-size: 22px; }
+  .info-asesoramiento div p {
+    font-size: 14px; }
+  .areas-asesoramiento h2 {
+    font-size: 18px; }
+  .asesoramiento-tarjetas div h3 {
+    font-size: 22px; }
+  .asesoramiento-tarjetas div p {
+    font-size: 14px; }
+  /*ESTUDIO*/
+  .info-estudio div p {
+    font-size: 14px; }
+  .estudio-inspiracion {
+    grid-auto-rows: 60px 150px 150px 150px;
+    gap: 15px; }
+  /*CONTACTO*/
+  .hero-contacto {
+    height: 400px; }
+  .hero-contacto h1 {
+    font-size: 30px;
+    border-radius: 0px 25px 0px 25px; }
+  .consultas-generales div h2 {
+    font-size: 22px; }
+  .consultas-generales div p {
+    font-size: 14px; }
+  .consultas-de-proyecto h2 {
+    font-size: 22px; }
+  .consultas-de-proyecto p {
     font-size: 14px; } }
 
 @media screen and (max-width: 830px) {
@@ -725,7 +1275,56 @@ footer {
   .hero-arquitectura p {
     margin-top: 10px; }
   .info-arquitectura {
-    height: 620px; } }
+    height: 620px; }
+  /*INTERIORISMO*/
+  .hero-interiorismo h1 {
+    font-size: 25px; }
+  .hero-interiorismo p {
+    margin-top: 10px; }
+  .info-interiorismo {
+    height: 480px; }
+  /*ASESORAMIENTO*/
+  .hero-asesoramiento h1 {
+    font-size: 25px; }
+  .hero-asesoramiento p {
+    margin-top: 10px; }
+  /*ESTUDIO*/
+  .estudio-inspiracion {
+    grid-auto-rows: 70px 120px 120px 120px; }
+  .estudio-inspiracion div:hover h3 {
+    font-size: 14px; }
+  /*CONTACTO*/
+  .hero-contacto h1 {
+    font-size: 25px; }
+  .consultas-generales {
+    height: 300px; }
+  .formulario-contacto .datos-basicos label {
+    width: 70%; }
+  .formulario-contacto .datos-basicos input {
+    width: 70%; }
+  .formulario-contacto .servicio-a-consultar label {
+    width: 70%; }
+  .formulario-contacto .servicio-a-consultar select {
+    width: 70%; }
+  .formulario-contacto .checkbox-ambientes {
+    width: 70%; }
+  .formulario-contacto .checkbox-ambientes label {
+    width: 70%;
+    margin-left: 0px; }
+  .formulario-contacto .checkbox-ambientes div input {
+    width: 3%; }
+  .formulario-contacto .contanos-tu-proyecto label {
+    width: 70%; }
+  .formulario-contacto .contanos-tu-proyecto textarea {
+    width: 70%; }
+  .formulario-contacto .honorarios label {
+    width: 70%; }
+  .formulario-contacto .honorarios select {
+    width: 70%; }
+  .formulario-contacto .presupuesto label {
+    width: 70%; }
+  .formulario-contacto .presupuesto textarea {
+    width: 70%; } }
 
 @media screen and (max-width: 750px) {
   /*NAV-BAR*/
@@ -814,9 +1413,89 @@ footer {
     font-size: 12px; }
   .arquitectura-proyectos .arquitectura-tarjetas div a {
     font-size: 10px;
+    border-radius: 0px 10px 0px 10px; }
+  /*INTERIORISMO*/
+  .hero-interiorismo {
+    height: 300px; }
+  .hero-interiorismo h1 {
+    font-size: 20px; }
+  .hero-interiorismo p {
+    font-size: 12px;
+    margin-bottom: 20px; }
+  .info-interiorismo div p {
+    font-size: 12px; }
+  .info-interiorismo img {
+    width: 35%; }
+  /*ASESORAMIENTO*/
+  .hero-asesoramiento {
+    height: 300px; }
+  .hero-asesoramiento h1 {
+    font-size: 20px; }
+  .hero-asesoramiento p {
+    font-size: 12px;
+    margin-bottom: 20px; }
+  .info-asesoramiento div h2 {
+    font-size: 20px; }
+  .info-asesoramiento div p {
+    font-size: 12px; }
+  .info-asesoramiento img {
+    width: 35%; }
+  .areas-asesoramiento h2 {
+    font-size: 15px; }
+  .asesoramiento-tarjetas div h3 {
+    font-size: 18px; }
+  .areas-asesoramiento .asesoramiento-tarjetas div p {
+    font-size: 12px; }
+  /*ESTUDIO*/
+  .info-estudio img {
+    display: none; }
+  .info-estudio div {
+    width: 90%; }
+  .info-estudio div h1 {
+    font-size: 20px; }
+  .info-estudio div p {
+    font-size: 12px; }
+  .estudio-inspiracion {
+    grid-auto-rows: 50px 100px 100px 100px;
+    gap: 10px; }
+  .estudio-inspiracion h2 {
+    font-size: 20px; }
+  .estudio-inspiracion div:hover h3 {
+    font-size: 12px; }
+  /*CONTACTO*/
+  .hero-contacto {
+    height: 300px; }
+  .hero-contacto h1 {
+    font-size: 20px; }
+  .hero-contacto p {
+    font-size: 12px;
+    margin-bottom: 20px; }
+  .consultas-generales img {
+    margin-left: 20px; }
+  .consultas-generales div h2 {
+    font-size: 20px;
+    margin: 10px 10px 10px 10px; }
+  .consultas-generales div p {
+    font-size: 12px;
+    margin: 20px 20px 20px 10px; }
+  .consultas-generales div a {
+    margin-left: 10px; }
+  .consultas-de-proyecto h2 {
+    font-size: 20px;
+    margin: 10px 10px 10px 0px; }
+  .consultas-de-proyecto p {
+    font-size: 12px;
+    margin: 20px 0px 20px 0px; }
+  .formulario-contacto .submit-contacto {
+    font-size: 10px;
+    border-radius: 0px 10px 0px 10px;
+    margin-left: 100px; }
+  .formulario-contacto .reset-contacto {
+    font-size: 10px;
     border-radius: 0px 10px 0px 10px; } }
 
 @media screen and (max-width: 654px) {
+  /*NAVBAR*/
   .navbar-collapse ul li a {
     font-size: 12px; }
   .d-flex input {
@@ -825,7 +1504,6 @@ footer {
   .hero {
     height: 300px; }
   .hero img {
-    width: 17%;
     padding: 10px;
     border-radius: 0px 12px 0px 12px;
     margin: 25px 0px 10px 0px; }
@@ -834,25 +1512,17 @@ footer {
   .bienvenidos div h2 {
     font-size: 15px; }
   .bienvenidos div p {
-    font-size: 9px; }
-  .elegirnos {
-    height: auto; }
+    text-align: justify; }
   .elegirnos div h2 {
     font-size: 15px; }
-  .elegirnos div p {
-    font-size: 9px; }
   .servicios {
-    grid-template-rows: 50px 90px 90px 90px; }
+    grid-template-rows: auto; }
   .servicios div h2 {
     font-size: 9px; }
   .servicios div h3 {
     font-size: 15px; }
   .servicios div h4 {
     font-size: 12px; }
-  .servicios div p {
-    font-size: 9px; }
-  .servicios div a {
-    font-size: 8px; }
   /*FOOTER*/
   footer {
     grid-template-rows: 41px 50px 50px 30px; }
@@ -887,9 +1557,25 @@ footer {
     padding: 15px 10px 15px 10px;
     margin-top: 30px; }
   .info-arquitectura {
-    height: 400px; }
+    height: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center;
+    margin-top: 20px; }
+  .info-arquitectura div {
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; }
   .info-arquitectura div p {
-    font-size: 9px; }
+    text-align: justify;
+    margin-left: 0px; }
+  .info-arquitectura img {
+    width: 50%;
+    padding: 10px 30px 20px 30px;
+    margin: 0px; }
+  .info-arquitectura .info-arquitectura-imagen_2 {
+    display: flex; }
   .arquitectura-proyectos h2 {
     font-size: 15px;
     margin-top: 0px; }
@@ -899,10 +1585,60 @@ footer {
   .arquitectura-proyectos .arquitectura-tarjetas div h3 {
     font-size: 13px; }
   .arquitectura-proyectos .arquitectura-tarjetas div p {
-    font-size: 9px;
     padding-bottom: 0px; }
-  .arquitectura-proyectos .arquitectura-tarjetas div a {
-    font-size: 8px; } }
+  /*INTERIORISMO*/
+  .hero-interiorismo h1 {
+    font-size: 18px;
+    border-radius: 0px 20px 0px 20px;
+    padding: 15px 10px 15px 10px;
+    margin-top: 30px; }
+  .info-interiorismo {
+    height: 450px;
+    justify-content: center;
+    margin-top: 20px; }
+  .info-interiorismo div p {
+    margin-left: 20px; }
+  /*ASESORAMIENTO*/
+  .hero-asesoramiento h1 {
+    font-size: 18px;
+    border-radius: 0px 20px 0px 20px;
+    padding: 15px 10px 15px 10px;
+    margin-top: 30px; }
+  .info-asesoramiento {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center; }
+  .info-asesoramiento div {
+    width: 90%; }
+  .info-asesoramiento div h2 {
+    font-size: 15px; }
+  .areas-asesoramiento h2 {
+    font-size: 12px; }
+  .asesoramiento-tarjetas div h3 {
+    font-size: 13px; }
+  /*ESTUDIO*/
+  .info-estudio div h1 {
+    font-size: 15px; }
+  .estudio-inspiracion {
+    grid-auto-rows: 50px 150px 150px 180px 150px 150px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "titulo tirulo" "bofill zumthor" "bofill aalto" "norm norm" "mateus casas" "cotaparedes casas"; }
+  .estudio-inspiracion h2 {
+    font-size: 15px; }
+  /*CONTACTO*/
+  .hero-contacto h1 {
+    font-size: 18px;
+    border-radius: 0px 20px 0px 20px;
+    padding: 15px 10px 15px 10px;
+    margin-top: 30px; }
+  .consultas-generales div h2 {
+    font-size: 15px; }
+  .consultas-generales div a {
+    font-size: 10px; }
+  .consultas-de-proyecto h2 {
+    font-size: 15px;
+    padding-top: 30px; } }
 
 @media screen and (max-width: 530px) {
   /*NAV-BAR*/
@@ -914,7 +1650,6 @@ footer {
   .hero {
     height: 250px; }
   .hero img {
-    width: 15%;
     padding: 8px;
     border-radius: 0px 10px 0px 10px; }
   .hero h1 {
@@ -948,16 +1683,15 @@ footer {
   .bienvenidos div img {
     width: 30%; }
   .bienvenidos div h2 {
-    font-size: 12px;
     padding: 0px;
     margin: 0px 0px 10px 0px; }
   .bienvenidos div p {
     width: 100%;
-    font-size: 8px;
     margin-left: 0px;
     margin-bottom: 0px; }
   .elegirnos {
-    display: block; }
+    display: block;
+    height: auto; }
   .elegirnos div {
     width: 80%;
     display: flex;
@@ -978,9 +1712,7 @@ footer {
     padding: 10px 50px 20px 50px;
     margin: 0px; }
   .servicios {
-    grid-template-rows: 50px 90px 110px 90px; }
-  .servicios div h2 {
-    font-size: 8px; }
+    grid-template-rows: auto; }
   /*FOOTER*/
   footer {
     grid-template-columns: 1fr;
@@ -990,70 +1722,106 @@ footer {
     font-size: 20px;
     height: 22px; }
   .footer-contacto h3 {
-    font-size: 9px;
     margin-bottom: 0px; }
-  .footer-contacto a {
-    font-size: 7px;
-    padding-top: 0px; }
-  .footer-oficina h3 {
-    font-size: 9px; }
-  .footer-oficina div p {
-    font-size: 7px; }
-  .footer-social h3 {
-    font-size: 9px; }
-  .footer-social a {
-    font-size: 7px; }
   .footer-social a img {
-    width: 2%; }
-  .footer-backtotop a {
-    font-size: 7px; }
+    width: 3%; }
   .footer-backtotop a img {
-    width: 1.5%;
+    width: 2%;
     border-radius: 2px; }
   .footer-isotipo {
     margin-top: 0px; }
   .footer-isotipo img {
-    margin-top: 0px; }
-  .footer-derechos {
-    margin-top: 5px; }
+    margin-top: 20px; }
   .footer-derechos p {
-    font-size: 7px;
     margin-bottom: 0px; }
   /*ARQUITECTURA*/
   .hero-arquitectura {
     height: 250px; }
   .hero-arquitectura h1 {
-    font-size: 12px;
+    font-size: 15px;
     border-radius: 0px 15px 0px 15px; }
   .hero-arquitectura p {
     font-size: 10px;
     padding: 5px;
     margin-top: 10px;
     margin-bottom: 10px; }
-  .info-arquitectura {
+  /*INTERIORISMO*/
+  .hero-interiorismo {
+    height: 250px; }
+  .hero-interiorismo h1 {
+    font-size: 14px;
+    border-radius: 0px 15px 0px 15px; }
+  .hero-interiorismo p {
+    font-size: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .info-interiorismo {
     height: auto;
     display: flex;
     flex-wrap: wrap-reverse;
     align-items: center; }
-  .info-arquitectura div {
+  .info-interiorismo div {
     width: 90%;
     margin-top: 20px;
     display: flex;
     flex-direction: column; }
-  .info-arquitectura div p {
+  .info-interiorismo div p {
     text-align: justify;
     margin-left: 0px; }
-  .info-arquitectura img {
+  .info-interiorismo img {
     width: 50%;
     padding: 10px 30px 20px 30px;
     margin: 0px; }
-  .info-arquitectura .info-arquitectura-imagen_2 {
-    display: flex; } }
+  /*ASESORAMIENTO*/
+  .hero-asesoramiento {
+    height: 250px; }
+  .hero-asesoramiento h1 {
+    font-size: 14px;
+    border-radius: 0px 15px 0px 15px; }
+  .hero-asesoramiento p {
+    font-size: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .info-asesoramiento div p {
+    text-align: justify;
+    margin-left: 0px; }
+  .info-asesoramiento img {
+    width: 50%;
+    padding: 10px 30px 20px 30px;
+    margin: 0px; }
+  /*CONTACTO*/
+  .hero-contacto {
+    height: 250px; }
+  .hero-contacto h1 {
+    font-size: 14px;
+    border-radius: 0px 15px 0px 15px; }
+  .hero-contacto p {
+    font-size: 10px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+  .consultas-generales {
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse; }
+  .consultas-generales div h2 {
+    margin: 20px 10px 5px 15px; }
+  .consultas-generales div p {
+    text-align: justify;
+    margin-left: 15px; }
+  .consultas-generales div a {
+    margin-left: 15px; }
+  .consultas-generales img {
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px 20px 50px;
+    margin: 0px; } }
 
 @media screen and (max-width: 450px) {
   /*NAV-BAR*/
-  .navbar div a {
-    font-size: 10px; }
   .navbar-brand {
     padding: 10px; }
   .navbar-collapse ul li a {
@@ -1070,43 +1838,22 @@ footer {
   .hero h1 {
     padding: 4px; }
   .hero a {
-    font-size: 5px;
     border-radius: 0px 5px 0px 5px; }
   .bienvenidos-imagen1 {
     left: -30px; }
   .bienvenidos-imagen2 {
     left: 30px; }
   .elegirnos div h2 {
-    font-size: 10px;
     margin-right: 0px; }
-  .elegirnos div p {
-    font-size: 8px; }
   .elegirnos img {
     padding: 10px 60px 10px 60px; }
   .servicios {
-    grid-template-rows: 50px 80px 100px 80px; }
-  .servicios div h3 {
-    font-size: 10px; }
-  .servicios div h2 {
-    font-size: 6px; }
-  .servicios div h4 {
-    font-size: 9px; }
+    grid-template-rows: auto; }
   .servicios div p {
-    font-size: 8px;
     margin-bottom: 0px; }
   .servicios div a {
-    font-size: 5px;
     border-radius: 0px 5px 0px 5px;
     margin: 0px; }
-  /*FOOTER*/
-  .footer-contacto h3 {
-    font-size: 8px; }
-  .footer-oficina h3 {
-    font-size: 8px; }
-  .footer-social h3 {
-    font-size: 8px; }
-  .footer-derechos p {
-    font-size: 6px; }
   /*WHATSAPP*/
   .whatsapp a img {
     bottom: 15px;
@@ -1121,4 +1868,39 @@ footer {
     padding: 4px;
     margin-top: 0px; }
   .arquitectura-proyectos h2 {
-    margin-top: 10px; } }
+    margin-top: 10px; }
+  /*INTERIORISMO*/
+  .hero-interiorismo {
+    height: 200px; }
+  .hero-interiorismo h1 {
+    width: 25%;
+    border-radius: 0px 10px 0px 10px;
+    padding: 10px 5px 10px 5px; }
+  .hero-interiorismo p {
+    padding: 4px;
+    margin-top: 0px; }
+  /*ASESORAMIENTO*/
+  .hero-asesoramiento {
+    height: 200px; }
+  .hero-asesoramiento h1 {
+    border-radius: 0px 10px 0px 10px;
+    padding: 10px 5px 10px 5px; }
+  .hero-asesoramiento p {
+    padding: 4px;
+    margin-top: 0px; }
+  /*CONTACTO*/
+  .hero-contacto {
+    height: 200px; }
+  .hero-contacto h1 {
+    border-radius: 0px 10px 0px 10px;
+    padding: 10px 5px 10px 5px; }
+  .hero-contacto p {
+    padding: 4px;
+    margin-top: 0px; }
+  .submit-contacto {
+    margin-left: 60px; }
+  .estudio-inspiracion {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 50px 500px 180px 180px 180px 180px 180px 500px;
+    grid-template-areas: "titulo" "bofill" "zumthor" "aalto" "norm" "mateus" "cotaparedes" "casas";
+    gap: 20px; } }
