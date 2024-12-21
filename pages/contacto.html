@@ -72,7 +72,7 @@
             <h2>Consultas de proyecto</h2>
             <p>Rellená el formulario a continuación, contanos acerca de tus ideas, necesidades y/o espacios. Nos pondremos en contacto con vos para coordinar una entrevista</p>
         </div>
-        <form action="" method="" enctype="" class="formulario-contacto">
+        <form action="" method="" enctype="" class="formulario-contacto" id="formulario-contacto">
             <div class="datos-basicos">
                 <label for="nombre">Nombre*</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
@@ -91,11 +91,11 @@
             </div>
             <div class="servicio-a-consultar">
                 <label for="servicios">Servicios a consultar*</label>
-                <select name="servicios" id="Servicio a consultar">
+                <select name="servicios" id="servicio-a-consultar">
                     <label for="Servicios">Servicio a consultar</label>
-                    <option value="">Arquitectura</option>
-                    <option value="">Interiorismo</option>
-                    <option value="">Asesoramiento a distancia</option>
+                    <option value="Arquitectura">Arquitectura</option>
+                    <option value="Interiorismo">Interiorismo</option>
+                    <option value="Asesoramiento a distancia">Asesoramiento a distancia</option>
                 </select>
             </div>
             <div class="checkbox-ambientes">
@@ -108,20 +108,20 @@
             </div>
             <div class="contanos-tu-proyecto">
                 <label for="comentario">Contanos acerca de tu proyecto*</label>
-                <textarea name="comentario" id="comentario" placeholder="Escribe aqui"></textarea>
+                <textarea name="comentario" id="comentario-proyecto" placeholder="Escribe aqui"></textarea>
             </div>
             <div class="honorarios">
                 <label for="honorario">¿Cuánto estás dispuesto a invertir en nuestro servicio? Refiere a honorarios profesionales</label>
                 <select name="honorario" id="honorario">
-                    <option value="">USD 500</option>
-                    <option value="">USD 1000</option>
-                    <option value="">USD 2000</option>
-                    <option value="">+ USD 2500</option>
+                    <option value="USD 500">USD 500</option>
+                    <option value="USD 1000">USD 1000</option>
+                    <option value="USD 2000">USD 2000</option>
+                    <option value="+ USD 2500">+ USD 2500</option>
                 </select>
             </div>
             <div class="presupuesto">
                 <label for="comentario">¿Cuál es tu presupuesto para realizar el proyecto?</label>
-                <textarea name="comentario" id="comentario" placeholder="Escribe aqui"></textarea>
+                <textarea name="comentario" id="comentario-presupuesto" placeholder="Escribe aqui"></textarea>
             </div>
             <input type="submit" class="submit-contacto">
             <input type="reset" class="reset-contacto">
@@ -168,6 +168,7 @@
     <!--?bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!--?Javascript contacto.js-->
+    <script src="../scripts/registrosContacto.js"></script>
     <script src="../scripts/contacto.js"></script>
 </body>
 </html>
