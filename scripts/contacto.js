@@ -66,16 +66,42 @@ const registrosMapeado = registros.map((unRegistro) => {
 /*para que aparezca el array vacío (y funcione el find), con los valores que le de el usuario usar:*/
 //const registrosMapeado = []
 
+/*sitio cargado completamente
+document.addEventListener ("DOMContentLoaded", ()=>{
+    Swal.fire({
+        title: 'Genial',
+        text: 'Ya podes trabajar con el sitio',
+        icon: 'success',
+        confirmButtonText: 'Cool'
+    })
+})*/
 
 const crearContacto = (nombre, apellido, direccion = "", email = "", serviciosAConsultar = "", cantidadDeAmbientes = "", contanosTuProyecto = "", honorarios = "", presupuestoProyecto = "", fechaDeInscripcion = new Date()) => {
     //Chequear que los datos obligatorios estén cargados
-    /*if ((crearContacto.nombre = "") || (crearContacto.apellido = "") || (crearContacto.direccion = "") || (crearContacto.email = "") || (crearContacto.serviciosAConsultar = "") || (crearContacto.contanosTuProyecto = "")) {
-        alert("Por favor completa los datos solicitados")
+    if ((nombre === "") || (apellido === "") || (email === "") || (serviciosAConsultar.trim === "") || (!contanosTuProyecto)) {
+        /*alert("Por favor completa los datos solicitados");*/
+        Swal.fire({
+            title: 'Ups!',
+            text: 'Por favor completa los datos solicitados',
+            icon: 'error',
+            confirmButtonText: 'De acuerdo',
+            buttonsStyling: 'false',
+        })
     }
     else {
-        alert("Tus datos han sido cargados con exitos. Nos pondremos en contacto contigo a la brevedad")
-    return false
-    };*/
+        /*alert("Tus datos han sido cargados con exitos. Nos pondremos en contacto contigo a la brevedad")*/
+        Toastify({
+            text: "Tus datos han sido cargados con exito! Nos pondremos en contacto contigo a la brevedad",
+            duration:5000,
+            close: true,
+            gravity: "bottom",
+            className: "info",
+            style: {
+                background: "linear-gradient(to right,rgb(101, 109, 74),rgb(237, 224, 212))",
+            }
+        }).showToast();
+        return false
+    };
     const unRegistro = new RegistroContacto(nombre.trim(), apellido.trim(), direccion.trim(), email.trim().toLowerCase(), serviciosAConsultar.trim(), cantidadDeAmbientes.trim(), contanosTuProyecto.trim(), honorarios.trim(), presupuestoProyecto.trim());
     console.log(unRegistro);
     registrosMapeado.push(unRegistro);
@@ -104,14 +130,13 @@ formularioContacto.addEventListener("submit", (evento) => {
     if (crearContacto(nombre, apellido, direccion, email, serviciosAConsultar, cantidadDeAmbientes, contanosTuProyecto, honorarios, presupuestoProyecto)) {
         localStorage.setItem("registrosRecibidos", JSON.stringify(registrosMapeado))
         const restoreData = JSON.parse(localStorage.getItem("registrosRecibidos"))
-        console.log("recuperamos info, ",restoreData)
+        console.log("recuperamos info, ", restoreData)
     } else {
 
     }
-
+    formularioContacto.reset()
 })
 console.log("Registros pendientes de revisión: ", registrosMapeado)
-
 
 
 
@@ -122,14 +147,4 @@ console.log("Requiere servicios de interiorismo: ", busquedaServicios)
 const filtradoHonorarios = registros.filter((unRegistro) => { return unRegistro.honorarios == "usd 2000" });
 console.log("Tope de honorarios usd 2000: ", filtradoHonorarios)
 
-/*console.log (RegistroContacto.toString());*/
-
-/*const inputs = document.querySelectorAll('input');
-const envioDeDatos = document.getElementById ('submit-contacto').addEventListener ("click", () =>{
-    const form = [...inputs].map (unInput ={
-        return: {nombre: unInput.nombre, apellido: unInput.apellido, dirección: unInput.adress},
-    })
-    window.localStorage.setItem ('form', JSON.stringify (form));
-    window.Location= './contactoController.js';
-}) */
-
+console.log(registrosMapeado);
