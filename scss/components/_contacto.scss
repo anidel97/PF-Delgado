@@ -1,6 +1,6 @@
 /*   CONTACTO   */
 
-.hero-contacto{
+.hero-contacto {
     width: 100%;
     height: calc(100vh - 90.4px);
     background-image: url(../img/hero-asesoramiento.png);
@@ -11,7 +11,7 @@
     @include flex (flex, start, center);
     flex-direction: column;
 
-    h1{
+    h1 {
         font-weight: 200;
         font-size: nth($fonts, 6);
         color: $color-principal;
@@ -23,37 +23,43 @@
         color: $color-secundario;
         text-align: center;
     }
-    p{
+
+    p {
         font-weight: 600;
         font-size: nth($fonts, 4);
         color: $color-principal;
         margin: 30px 0px 40px 0px;
     }
 }
-.consultas-generales{
+
+.consultas-generales {
     width: 100%;
     height: 400px;
     @include flex (flex, space-evenly, center);
-    img{
+
+    img {
         width: 30%;
         margin: 10px;
         margin-left: 50px;
     }
-    div{
-        h2{
+
+    div {
+        h2 {
             font-weight: 200;
             font-size: nth($fonts, 5);
             font-style: italic;
             margin: 15px;
             color: $color-principal;
         }
-        p{
+
+        p {
             font-weight: 100;
             font-size: nth($fonts, 2);
             margin: 20px 20px 40px 20px;
             text-align: left;
         }
-        a{
+
+        a {
             font-family: "Mulish", sans-serif;
             font-size: nth($fonts, 2);
             @extend %enlaces;
@@ -61,17 +67,20 @@
             padding: 5px 10px 5px 10px;
             margin: 20px;
             border-radius: 0px 15px 0px 15px;
-            &:hover{
+
+            &:hover {
                 border: 1px solid rgba(101, 109, 74, 0);
                 box-shadow: 0px 0px 10px 0.5px;
             }
         }
     }
 }
-.consultas-de-proyecto{
+
+.consultas-de-proyecto {
     background-color: rgb(213, 217, 200);
     font-family: "Mulish", sans-serif;
-    h2{
+
+    h2 {
         font-weight: 200;
         font-size: nth($fonts, 5);
         font-style: italic;
@@ -79,7 +88,8 @@
         padding: 70px 0px 20px 30px;
         color: $color-principal;
     }
-    p{
+
+    p {
         font-weight: 100;
         font-size: nth($fonts, 2);
         padding: 0px 30px 30px 30px;
@@ -88,24 +98,27 @@
     }
 }
 
-.formulario-contacto{
+.formulario-contacto {
     width: 100%;
     color: $color-principal;
     margin: 0px auto;
     align-items: center;
-    .datos-basicos{
+
+    .datos-basicos {
         margin: 0px auto;
         width: 100%;
         @include flex (flex, center, center);
         flex-direction: column;
-        label{
+
+        label {
             width: 40%;
             font-weight: 400;
             font-size: nth($fonts, 1);
             padding: 15px 0px 0px 0px;
             text-align: left;
         }
-        input{
+
+        input {
             font-family: "Mulish", sans-serif;
             font-weight: 400;
             font-size: 12px;
@@ -114,14 +127,16 @@
             padding: 5px;
             text-align: left;
             display: block;
-        } 
+        }
     }
-    .servicio-a-consultar{
+
+    .servicio-a-consultar {
         margin: 0px auto;
         width: 100%;
         @include flex (flex, center, center);
         flex-direction: column;
-        label{
+
+        label {
             width: 40%;
             font-weight: 400;
             font-size: nth($fonts, 1);
@@ -129,7 +144,8 @@
             text-align: left;
             display: block;
         }
-        select{
+
+        select {
             font-family: "Mulish", sans-serif;
             font-weight: 400;
             font-size: 12px;
@@ -140,10 +156,12 @@
             resize: none;
         }
     }
-    .checkbox-ambientes{
+
+    .checkbox-ambientes {
         margin: 0px auto;
         width: 40%;
-        label{
+
+        label {
             display: block;
             font-weight: 400;
             font-size: nth($fonts, 1);
@@ -151,8 +169,9 @@
             padding: 0px;
             height: 30px;
         }
-        div{
-            input{
+
+        div {
+            input {
                 display: inline-block;
                 width: 5%;
                 margin: 0px 20px 0px 0px;
@@ -161,19 +180,22 @@
             }
         }
     }
-    .contanos-tu-proyecto{
+
+    .contanos-tu-proyecto {
         margin: 0px auto;
         width: 100%;
         @include flex (flex, center, center);
         flex-direction: column;
-        label{
+
+        label {
             width: 40%;
             font-weight: 400;
             font-size: nth($fonts, 1);
             padding: 15px 15px 0px 0px;
             display: inline-block;
         }
-        textarea{
+
+        textarea {
             font-family: "Mulish", sans-serif;
             font-weight: 400;
             font-size: 12px;
@@ -185,19 +207,22 @@
             resize: none;
         }
     }
-    .honorarios{
+
+    .honorarios {
         margin: 0px auto;
         width: 100%;
         @include flex (flex, center, center);
         flex-direction: column;
         color: $color-principal;
-        label{
+
+        label {
             width: 40%;
             font-weight: 400;
             font-size: nth($fonts, 1);
             padding: 15px 15px 0px 0px;
         }
-        select{
+
+        select {
             font-family: "Mulish", sans-serif;
             font-weight: 400;
             font-size: 12px;
@@ -209,19 +234,22 @@
             display: block;
         }
     }
-    .presupuesto{
+
+    .presupuesto {
         margin: 0px auto;
         width: 100%;
         @include flex (flex, center, center);
         flex-direction: column;
         color: $color-principal;
-        label{
+
+        label {
             width: 40%;
             font-weight: 400;
             font-size: nth($fonts, 1);
             padding: 15px 15px 0px 0px;
         }
-        textarea{
+
+        textarea {
             font-family: "Mulish", sans-serif;
             font-weight: 400;
             font-size: 12px;
@@ -233,7 +261,8 @@
             resize: none;
         }
     }
-    .submit-contacto{
+
+    .submit-contacto {
         font-family: "Mulish", sans-serif;
         font-size: nth($fonts, 2);
         padding: 5px 10px 5px 10px;
@@ -243,12 +272,14 @@
         border-radius: 0px 15px 0px 15px;
         border: none;
         margin-left: 450px;
-        &:hover{
+
+        &:hover {
             border: 1px solid rgba(101, 109, 74, 0);
             box-shadow: 0px 0px 10px 0.5px;
         }
     }
-    .reset-contacto{
+
+    .reset-contacto {
         font-family: "Mulish", sans-serif;
         font-size: nth($fonts, 2);
         padding: 5px 10px 5px 10px;
@@ -258,9 +289,11 @@
         background-color: $color-secundario;
         border-radius: 0px 15px 0px 15px;
         border: none;
-        &:hover{
+
+        &:hover {
             border: 1px solid rgba(101, 109, 74, 0);
             box-shadow: 0px 0px 10px 0.5px;
         }
     }
 }
+

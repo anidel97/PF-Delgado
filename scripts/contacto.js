@@ -78,35 +78,41 @@ document.addEventListener ("DOMContentLoaded", ()=>{
 
 const crearContacto = (nombre, apellido, direccion = "", email = "", serviciosAConsultar = "", cantidadDeAmbientes = "", contanosTuProyecto = "", honorarios = "", presupuestoProyecto = "", fechaDeInscripcion = new Date()) => {
     //Chequear que los datos obligatorios estén cargados
+
     if ((nombre === "") || (apellido === "") || (email === "") || (serviciosAConsultar.trim === "") || (!contanosTuProyecto)) {
         /*alert("Por favor completa los datos solicitados");*/
-        Swal.fire({
-            title: 'Ups!',
-            text: 'Por favor completa los datos solicitados',
-            icon: 'error',
-            confirmButtonText: 'De acuerdo',
-            buttonsStyling: 'false',
-        })
+        setTimeout(() => {
+            Swal.fire({
+                title: 'Ups!',
+                text: 'Por favor completa los datos obligatorios',
+                icon: 'error',
+                confirmButtonText: 'De acuerdo',
+                buttonsStyling: 'false',
+            });
+        }, 3500)
+        return false 
+
     }
     else {
         /*alert("Tus datos han sido cargados con exitos. Nos pondremos en contacto contigo a la brevedad")*/
-        Toastify({
-            text: "Tus datos han sido cargados con exito! Nos pondremos en contacto contigo a la brevedad",
-            duration:5000,
-            close: true,
-            gravity: "bottom",
-            className: "info",
-            style: {
-                background: "linear-gradient(to right,rgb(101, 109, 74),rgb(237, 224, 212))",
-            }
-        }).showToast();
-        return false
+        setTimeout(() => {
+            Toastify({
+                text: "Tus datos han sido cargados con exito! Nos pondremos en contacto contigo a la brevedad",
+                duration: 5000,
+                close: true,
+                gravity: "bottom",
+                className: "info",
+                style: {
+                    background: "linear-gradient(to right,rgb(101, 109, 74),rgb(237, 224, 212))",
+                }
+            }).showToast();
+        }, 3500)
     };
     const unRegistro = new RegistroContacto(nombre.trim(), apellido.trim(), direccion.trim(), email.trim().toLowerCase(), serviciosAConsultar.trim(), cantidadDeAmbientes.trim(), contanosTuProyecto.trim(), honorarios.trim(), presupuestoProyecto.trim());
     console.log(unRegistro);
     registrosMapeado.push(unRegistro);
     console.log(registrosMapeado)
-    return true
+    return true 
 
     /* el find se puede declarar adentro de la funcion o fuera como lo dejé
     console.log (registrosMapeado.find((unServicio) => { unServicio.serviciosAConsultar == "arquitectura"}))*/
@@ -115,8 +121,13 @@ const crearContacto = (nombre, apellido, direccion = "", email = "", serviciosAC
 
 //devolver datos de formulario
 const formularioContacto = document.getElementById("formulario-contacto");
+const spinner = document.getElementById("spinner"); /*esto lo agregue con chat gpt*/
+
 formularioContacto.addEventListener("submit", (evento) => {
     evento.preventDefault();
+    // Mostrar el spinner
+    spinner.classList.remove("visually-hidden");
+
     const nombre = document.getElementById("nombre").value;
     const apellido = document.getElementById("apellido").value;
     const direccion = document.getElementById("adress").value;
@@ -127,6 +138,11 @@ formularioContacto.addEventListener("submit", (evento) => {
     const honorarios = document.getElementById("honorario").value;
     const presupuestoProyecto = document.getElementById("comentario-presupuesto").value;
 
+    // Ocultar el spinner después de la validación
+    setTimeout(() =>{
+        spinner.classList.add("visually-hidden");
+    }, 3300)
+
     if (crearContacto(nombre, apellido, direccion, email, serviciosAConsultar, cantidadDeAmbientes, contanosTuProyecto, honorarios, presupuestoProyecto)) {
         localStorage.setItem("registrosRecibidos", JSON.stringify(registrosMapeado))
         const restoreData = JSON.parse(localStorage.getItem("registrosRecibidos"))
@@ -134,9 +150,13 @@ formularioContacto.addEventListener("submit", (evento) => {
     } else {
 
     }
+    
     formularioContacto.reset()
 })
 console.log("Registros pendientes de revisión: ", registrosMapeado)
+
+
+
 
 
 
