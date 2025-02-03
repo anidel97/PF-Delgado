@@ -2,7 +2,7 @@
 /*  LISTAS  */
 /*  EXTENDS  */
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
-.hero a, .servicios div a, .arquitectura-proyectos .arquitectura-tarjetas div a, .consultas-generales div a {
+.hero a, .servicios div a, .arquitectura-proyectos .arquitectura-tarjetas div a, .consultas-generales div a, .registros-estilo .registro-item a {
   text-decoration: none;
   color: #656d4a; }
 
@@ -592,20 +592,48 @@ main {
       resize: none; }
   .formulario-contacto .checkbox-ambientes {
     margin: 0px auto;
-    width: 40%; }
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*margin: 0px auto;
+        width: 40%;
+
+        label {
+            display: block;
+            font-weight: 400;
+            font-size: nth($fonts, 1);
+            width: 40%;
+            padding: 0px;
+            height: 30px;
+        }
+
+        div {
+            input {
+                display: inline-block;
+                width: 5%;
+                margin: 0px 20px 0px 0px;
+                padding: 0px;
+                height: 20px;
+            }
+        }*/ }
     .formulario-contacto .checkbox-ambientes label {
-      display: block;
+      width: 40%;
       font-weight: 400;
       font-size: 13px;
+      padding: 15px 0px 0px 0px;
+      text-align: left;
+      display: block; }
+    .formulario-contacto .checkbox-ambientes select {
+      font-family: "Mulish", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
       width: 40%;
-      padding: 0px;
-      height: 30px; }
-    .formulario-contacto .checkbox-ambientes div input {
-      display: inline-block;
-      width: 5%;
-      margin: 0px 20px 0px 0px;
-      padding: 0px;
-      height: 20px; }
+      margin: 0px 20px 20px 15px;
+      padding: 5px;
+      height: 30px;
+      resize: none; }
   .formulario-contacto .contanos-tu-proyecto {
     margin: 0px auto;
     width: 100%;
@@ -835,6 +863,49 @@ main {
       font-weight: 100;
       font-size: 15px;
       text-align: justify; }
+
+/*  CONTACTO CONTROLLER  */
+.botones-filtro {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 20px 10px 20px; }
+  .botones-filtro button {
+    font-weight: 200;
+    font-size: 20px;
+    text-decoration: none;
+    color: #656d4a;
+    border: hidden;
+    background-color: rgba(101, 109, 74, 0); }
+    .botones-filtro button:hover {
+      background-color: #656d4a;
+      color: #ede0d4;
+      font-weight: 300;
+      padding: 5px 10px 5px 10px;
+      border-radius: 0px 10px 0px 10px; }
+
+.registros-estilo {
+  padding: 10px;
+  margin: 10px 0; }
+  .registros-estilo .registro-item {
+    border: 0.5px solid #4a503f;
+    border-radius: 0px 30px 0px 30px;
+    margin: 10px 20px 20px 20px;
+    padding: 20px; }
+    .registros-estilo .registro-item a {
+      width: 10%;
+      text-align: center;
+      font-family: "Mulish", sans-serif;
+      font-size: 15px;
+      display: flex;
+      justify-self: center;
+      justify-content: center;
+      align-items: center;
+      background-color: #ede0d4;
+      padding: 5px 10px 5px 10px;
+      border-radius: 0px 15px 0px 15px; }
+      .registros-estilo .registro-item a:hover {
+        border: 1px solid rgba(101, 109, 74, 0);
+        box-shadow: 0px 0px 10px 0.5px; }
 
 /*  FOOTER  */
 footer {

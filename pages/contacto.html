@@ -101,12 +101,19 @@
                 </select>
             </div>
             <div class="checkbox-ambientes">
-                <label for="ambiente">Cantidad de ambientes</label>
+                <label for="servicios">Cantidad de ambientes</label>
+                <select name="cantidad-de-ambientes" id="cantidad-de-ambientes">
+                    <label for="ambientes">Cantidad de ambientes</label>
+                    <option value="1 ambiente">1 ambiente</option>
+                    <option value="2 ambientes o más">2 ambientes o más</option>
+                    <option value="Proyecto completo">Proyecto completo</option>
+                </select>
+                <!--<label for="ambiente">Cantidad de ambientes</label>
                 <div>
                     <label for="1chechbox"><input type="checkbox" name="1checkbox" id="">1 ambiente</label>
                     <label for="2chechbox"><input type="checkbox" name="2checkbox" id="">2 ambientes o más</label>
                     <label for="3chechbox"><input type="checkbox" name="3checkbox" id="">Proyecto completo</label>
-                </div>
+                </div>-->
             </div>
             <div class="contanos-tu-proyecto">
                 <label for="comentario">Contanos acerca de tu proyecto*</label>
@@ -181,8 +188,10 @@
     <!--?toastify-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <!--?Javascript contacto.js-->
-    <script src="../scripts/registrosContacto.js"></script>
+    <script src="../classes/registroContacto.js"></script>
+    <script src="../scripts/recuperarInfo.js"></script>
     <script src="../scripts/contacto.js"></script>
-    <script src="../pages/ContactController.html"></script>
+    <script src="../pages/contactController.html"></script>
+    
 </body>
 </html>

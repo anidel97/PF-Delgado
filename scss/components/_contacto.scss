@@ -159,6 +159,30 @@
 
     .checkbox-ambientes {
         margin: 0px auto;
+        width: 100%;
+        @include flex (flex, center, center);
+        flex-direction: column;
+
+        label {
+            width: 40%;
+            font-weight: 400;
+            font-size: nth($fonts, 1);
+            padding: 15px 0px 0px 0px;
+            text-align: left;
+            display: block;
+        }
+
+        select {
+            font-family: "Mulish", sans-serif;
+            font-weight: 400;
+            font-size: 12px;
+            width: 40%;
+            margin: 0px 20px 20px 15px;
+            padding: 5px;
+            height: 30px;
+            resize: none;
+        }
+        /*margin: 0px auto;
         width: 40%;
 
         label {
@@ -178,7 +202,7 @@
                 padding: 0px;
                 height: 20px;
             }
-        }
+        }*/
     }
 
     .contanos-tu-proyecto {
