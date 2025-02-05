@@ -8,9 +8,8 @@ class RegistroContacto {
     contanosTuProyecto = "";
     honorarios = "";
     presupuestoProyecto = "";
-    /*fechaDeInscripcion= new Date ();*/
 
-    constructor(nombre, apellido, direccion, email, serviciosAConsultar = "", cantidadDeAmbientes = "", contanosTuProyecto, honorarios = "", presupuestoProyecto, fechaDeInscripcion = new Date()) {
+    constructor(nombre, apellido, direccion, email, serviciosAConsultar = "", cantidadDeAmbientes = "", contanosTuProyecto, honorarios = "", presupuestoProyecto) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.direccion = direccion;
@@ -20,7 +19,6 @@ class RegistroContacto {
         this.contanosTuProyecto = contanosTuProyecto;
         this.honorarios = honorarios;
         this.presupuestoProyecto = presupuestoProyecto;
-        /*this.fechaDeInscripcion = fechaDeInscripcion;*/
     }
 
     toString() {
@@ -30,6 +28,7 @@ class RegistroContacto {
     addItem(unServicio) {
         this.serviciosAConsultar.push(unServicio)
     }
+    
     addItem2(nuevoHonorario) {
         this.honorarios.push(nuevoHonorario)
     }
